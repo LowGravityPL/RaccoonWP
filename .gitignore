@@ -1,0 +1,33 @@
+#File System
+.DS_Store
+
+#IDE
+/.idea
+
+#Vagrant
+/.vagrant
+
+#Composer
+/vendor/*
+!/vendor/.gitkeep
+
+#RaccoonWP
+.env
+/public/wordpress
+/public/core/debug.log
+/public/core/uploads/
+
+#Plugins
+/public/core/plugins/*
+!/public/core/plugins/index.php
+
+#exclude your non-composer/premium plugins here like
+#!public/core/plugins/your-plugin-here
+
+#RaccoonWP MU plugin
+
+
+#RaccoonWP theme
+/public/core/themes/raccoon-theme/node_modules/
+/public/core/themes/raccoon-theme/build-util/user.config.js
+/public/core/themes/raccoon-theme/dist/

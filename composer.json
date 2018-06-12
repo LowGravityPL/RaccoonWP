@@ -1,0 +1,66 @@
+{
+    "name": "lowgravitypl/raccoonwp",
+    "description": "RaccoonWP is an opinionated WordPress architecture stack and starter theme",
+    "type": "project",
+    "license": "MIT",
+    "keywords": [
+        "raccoon",
+        "wordpress",
+        "composer",
+        "boilerplate",
+        "stack"
+    ],
+    "scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ]
+    },
+    "authors": [
+        {
+            "name": "Kamil Grzegorczyk",
+            "homepage": "https://kamilgrzegorczyk.com"
+        },
+        {
+            "name": "Lucas Grzegorczyk"
+        }
+    ],
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "installer-paths": {
+            "public/core/mu-plugins/{$name}/": [
+                "type:wordpress-muplugin"
+            ],
+            "public/core/plugins/{$name}": [
+                "type:wordpress-plugin"
+            ],
+            "public/core/themes/{$name}": [
+                "type:wordpress-theme"
+            ]
+        },
+        "wordpress-install-dir": "public/wordpress"
+    },
+    "autoload": {
+        "psr-4": {
+            "RaccoonWP\\Core\\": "RaccoonWP/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "composer/installers": "^1.5",
+        "johnbillion/extended-cpts": "^4.2",
+        "johnpbloch/wordpress": "^4.9.6",
+        "roots/wp-password-bcrypt": "^1.0",
+        "vlucas/phpdotenv": "^2.4",
+        "wpackagist-plugin/gutenberg": "3.0.1",
+        "wpackagist-plugin/timber-library": "1.7.1"
+    }
+}
