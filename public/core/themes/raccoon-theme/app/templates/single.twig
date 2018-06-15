@@ -1,0 +1,11 @@
+{% extends 'base/layout.twig' %}
+
+{% block content %}
+    <section class="post-archive container">
+        {% if post %}
+            {%  include 'content/single/post-single.twig' with post only %}
+        {% else %}
+            {%  include 'content/not-found.twig' %}
+        {% endif %}
+    </section>
+{% endblock %}

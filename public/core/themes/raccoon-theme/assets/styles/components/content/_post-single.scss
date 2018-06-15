@@ -1,0 +1,9 @@
+.post-single {
+    @extend %generic-component;
+
+    .container {
+        @include container();
+
+        max-width: $max-content-width;
+    }
+}

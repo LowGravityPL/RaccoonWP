@@ -1,0 +1,30 @@
+.header-component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    background: #e0e0e0;
+
+    .site-logo {
+        width: 200px;
+        height: 150px;
+
+        transition: all 0.6s ease;
+
+        &:hover {
+            transition: all 0.3s ease;
+            transform: translate3D(0, -2px, 0) scale(1.1);
+        }
+    }
+
+    .site-title {
+        margin: 1rem auto;
+    }
+    .site-description {
+        margin: 0rem auto 1rem;
+        text-transform: uppercase;
+        font-style: italic;
+        font-weight: 300;
+    }
+}

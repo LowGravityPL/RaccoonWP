@@ -1,13 +1,15 @@
-![RaccoonWP logo](https://lowgravity.pl/raccoon-logo-scaled.png)
+![RaccoonWP logo](https://lowgravity.pl/raccoon-logo-scaled-small.png)
 # RaccoonWP
-Raccoon is a modern WordPress architecture stack which comes with a Starter Theme. 
+**This is 1.0.0-alpha release, RC coming soon. If you find any issues let us know**
 
-The stack is based on Composer on the backend and NodeJs and Webpack on the frontend. 
-This composition allows for quick, stable and efficient development using the tools which are state of the art in 2018.  
+Raccoon is a modern architecture stack and a starter theme for [WordPress](https://wordpress.org/). 
 
-You should use it as your boilerplate to obtain optimal, stable architecture with performance and security in mind.
+The stack is based on Composer on the backend. NodeJs with Webpack are used on the frontend. 
+This composition allows for quick and efficient development using the tools which are **state of the art in 2018.**  
 
-It is best suited for fresh projects though there is no problem in implementing it into existing ones.
+You should use it as your boilerplate/starter kit to obtain **optimal architecture with performance, extensibility and security** in mind.
+
+Raccoon is best suited for fresh projects (but there is no problem in implementing it into existing ones with some effort).
 
 ### Documentation
 Please find [the documentation on our github page](https://raccoonwp.lowgravity.pl)
@@ -21,7 +23,8 @@ Please find [the documentation on our github page](https://raccoonwp.lowgravity.
     - Support for [Wp-Cli](https://wp-cli.org/).
     - Proper project data management - for example by storing CPT configuration outside theme (when needed).
     - Ability to disable plugins per environment.  
-    - [Coming soon] Multisite not tested yet! Though it should work without issues..
+    - Internationalization built in from the beginning.
+    - [Coming soon] Multisite not tested yet! Though it should work without issues.
 - Theme:
     - Customizable theme build process based on newest [Webpack 4.12](https://webpack.js.org/) with all its features
     like dead code elimination, bundle analysis, watch process and more.

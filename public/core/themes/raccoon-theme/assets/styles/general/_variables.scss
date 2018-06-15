@@ -1,0 +1,27 @@
+// Fonts
+$primary-font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+$secondary-font-family: 'MasterOfComics', fantasy, serif;
+
+$primary-font-size: 1.6rem;
+
+// Color definitions
+$color-white: #ffffff;
+$color-black: #000000;
+$color-gray: #383838;
+$color-deep-blue: #00bfff;
+
+// Theme Colors
+$primary-action-color: red;
+$primary-font-color: $color-gray;
+$primary-background-color: $color-white;
+
+$selection-color: lighten($color-deep-blue, 40%);
+
+// Breakpoints and sizing
+$max-theme-width: 1500px;
+$max-content-width: 1000px;
+$desktop-gutter: 30px;
+
+// ~ tablet vertical and phones
+$screen-md-min: 783px !default;
+$screen-sm-max: $screen-md-min - 1px !default;

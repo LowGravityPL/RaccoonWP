@@ -1,0 +1,25 @@
+<div
+    class="header-component"
+>
+    <a
+        href="{{ home_url }}"
+        class="site-logo"
+    >
+        <img
+            src="{{ site_logo_url }}"
+            alt="Raccoon Logo"
+        />
+    </a>
+    <h1
+        class="site-title"
+    >
+        {{ site_title }}
+    </h1>
+    {% if(site_description) %}
+        <h2
+            class="site-description"
+        >
+            {{ site_description }}
+        </h2>
+    {% endif %}
+</div>

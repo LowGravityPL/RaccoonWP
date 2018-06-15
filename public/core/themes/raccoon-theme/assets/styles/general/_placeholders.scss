@@ -1,0 +1,14 @@
+%container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-left: $desktop-gutter;
+    padding-right: $desktop-gutter;
+
+    max-width: $max-theme-width;
+}
+
+%generic-component {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}

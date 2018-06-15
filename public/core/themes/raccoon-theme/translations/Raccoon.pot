@@ -1,0 +1,38 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the RaccoonWP package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RaccoonWP 1.0.0\n"
+"Report-Msgid-Bugs-To: https://lowgravity.pl\n"
+"POT-Creation-Date: 2018-06-15 18:27+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: app/base/setup/menus.php:15
+msgid "Primary Header Menu"
+msgstr ""
+
+#: app/base/setup/menus.php:16
+msgid "Footer Menu"
+msgstr ""
+
+#: app/base/setup/sidebars.php:14
+msgid "Primary sidebar"
+msgstr ""
+
+#: app/templates/components/404.twig:4
+msgid "We're sorry, the page you requested could not be found."
+msgstr ""
+
+#: app/templates/content/archive/post-card.twig:39
+msgid "Written by"
+msgstr ""

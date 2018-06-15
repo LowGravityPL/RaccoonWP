@@ -1,0 +1,45 @@
+<article
+    id="post-{{ ID }}"
+    class="post post-card {{ class }}"
+>
+    {% if featured_image %}
+        <a
+            class="post-thumbnail"
+            href="{{ permalink }}"
+        >
+            <div
+                class="post-thumbnail-image"
+                style="background-image: url({{ featured_image }})"
+            ></div>
+        </a>
+    {% endif %}
+    <div
+        class="post-content"
+    >
+        <header>
+            <div class="post-category">
+                {{ categories }}
+            </div>
+            <a
+                href="{{ permalink }}"
+            >
+                <h2
+                    class="post-title"
+                >
+                    {{ title }}
+                </h2>
+            </a>
+        </header>
+        <section
+            class="post-excerpt"
+        >
+            {{ excerpt }}
+        </section>
+        <footer>
+            {{ __('Written by', 'raccoonwp') }}
+            <a href="{{ author_archive_url }}">
+                {{ author_name }}
+            </a>
+        </footer>
+    </div>
+</article>

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace RaccoonWP\Core;
+namespace RaccoonWP;
 
 use Dotenv\Dotenv;
 

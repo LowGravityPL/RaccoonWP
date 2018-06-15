@@ -1,0 +1,28 @@
+/**
+ * General settings
+ */
+@import 'general/variables';
+@import 'general/placeholders';
+@import 'general/mixins';
+//run normalize-scss to normalize css across the browserss
+//@see: https://necolas.github.io/normalize.css/
+@import '~normalize-scss/sass/normalize';
+
+@include normalize();
+
+/**
+ * General layout
+ */
+@import 'general/main';
+@import 'general/typography';
+@import 'components/layout/header';
+@import 'components/layout/footer';
+
+/**
+ * Theme components
+ */
+@import 'components/404';
+@import 'components/content/post-archive.scss';
+@import 'components/content/post-card.scss';
+@import 'components/content/post-single.scss';
+

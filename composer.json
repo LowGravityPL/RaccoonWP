@@ -21,10 +21,12 @@
     "authors": [
         {
             "name": "Kamil Grzegorczyk",
+            "email": "kamilgrzegorczyk@gmail.com",
             "homepage": "https://kamilgrzegorczyk.com"
         },
         {
-            "name": "Lucas Grzegorczyk"
+            "name": "Lucas Grzegorczyk",
+            "email": "lucasgrzegorczyk@gmail.com"
         }
     ],
     "config": {
@@ -47,7 +49,7 @@
     },
     "autoload": {
         "psr-4": {
-            "RaccoonWP\\Core\\": "RaccoonWP/"
+            "RaccoonWP\\": "RaccoonWP/"
         }
     },
     "repositories": [

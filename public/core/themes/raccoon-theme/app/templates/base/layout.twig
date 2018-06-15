@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html
+    class="no-js"
+    {{ fn('language_attributes') }}
+>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% include 'blocks/favicons.twig' %}
+    {{ fn('wp_head') }}
+</head>
+<body>
+{% block header %}
+    {% include 'layout/header-default.twig' with header_data only %}
+{% endblock %}
+{% block content %}
+
+{% endblock %}
+{% block footer %}
+    {% include 'layout/footer-default.twig' with footer_data only %}
+{% endblock %}
+{{ fn('wp_footer') }}
+</body>
+</html>
