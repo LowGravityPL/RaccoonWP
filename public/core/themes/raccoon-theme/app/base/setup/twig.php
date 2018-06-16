@@ -3,7 +3,6 @@ declare(strict_types=1);
 
 namespace RaccoonTheme;
 
-
 function initialize_twig_support() {
 
     /**
@@ -30,10 +29,10 @@ function initialize_twig_support() {
     function add_to_timber_context($data)
     {
         //add default header data to all templates
-        $data[ 'header_data' ] = get_header_data();
+        $data[ 'header_data' ] = LayoutDataHelper::get_default_header_data();
 
         //add default footer data to all templates
-        $data[ 'footer_data' ] = get_footer_data();
+        $data[ 'footer_data' ] = LayoutDataHelper::get_default_footer_data();
 
         return $data;
     }

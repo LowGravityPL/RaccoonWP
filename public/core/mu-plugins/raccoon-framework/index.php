@@ -9,4 +9,7 @@ require_once(__DIR__ . '/helpers/get-entity-list.php');
 require_once(__DIR__ . '/helpers/include-theme-partial.php');
 require_once(__DIR__ . '/setup/setup.php');
 require_once(__DIR__ . '/setup/disable-plugins.php');
+
+//todo: we probably should autoload these
 require_once(__DIR__ . '/Lib/PluginDisabler.php');
+require_once(__DIR__ . '/Lib/DefaultDataHelper.php');

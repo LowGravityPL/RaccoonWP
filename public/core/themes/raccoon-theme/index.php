@@ -2,9 +2,9 @@
 /**
  * Renders the post archive view.
  */
-use function RaccoonTheme\get_current_posts_list;
+use RaccoonSite\DefaultPostHelper;
 
 $data            = Timber::get_context();
-$data[ 'posts' ] = get_current_posts_list();
+$data[ 'posts' ] = DefaultPostHelper::get_current_posts_list();
 
 \Timber::render('index.twig', $data);
