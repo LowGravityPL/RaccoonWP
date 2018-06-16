@@ -11,12 +11,7 @@
     "bugs": {
         "url": "https://github.com/LowGravityPL/RaccoonWP/issues"
     },
-    "licenses": [
-        {
-            "type": "MIT",
-            "url": "http://opensource.org/licenses/MIT"
-        }
-    ],
+    "license": "MIT",
     "directories": {
         "lib": "lib"
     },
