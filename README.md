@@ -1,6 +1,6 @@
 ![RaccoonWP logo](https://lowgravity.pl/raccoon-logo-scaled-small.png)
 # RaccoonWP
-**This is 1.0.0-alpha release, RC coming soon. If you find any issues let us know**
+**This is 1.0.0-alpha1 release, RC coming soon. If you find any issues let us know**
 
 Raccoon is a modern architecture stack and a starter theme for [WordPress](https://wordpress.org/). 
 
@@ -39,7 +39,12 @@ Please find [the documentation on our github page](https://raccoonwp.lowgravity.
     See our [recipes section](https://raccoonwp.lowgravity.pl/recipes) to see how to tweak the project to your needs.
 
 ### Current version
-1.0.0-alpha
+1.0.0-alpha1
 
 ### License
 [MIT](LICENSE.md) © [LowGravity.pl](https://lowgravity.pl)
+
+### Contributors
+- [Kamil Grzegorczyk](https://kamilgrzegorczyk.com)
+- [Lucas Grzegorczyk](https://github.com/furai)
+- artwork by [izabela Grzegorczyk](https://www.behance.net/IzaGrzegorczyk)
