@@ -29,10 +29,10 @@ function initialize_twig_support() {
     function add_to_timber_context($data)
     {
         //add default header data to all templates
-        $data[ 'header_data' ] = LayoutDataHelper::get_default_header_data();
+        $data[ 'header_data' ] = LayoutDataHelper::getDefaultHeaderData();
 
         //add default footer data to all templates
-        $data[ 'footer_data' ] = LayoutDataHelper::get_default_footer_data();
+        $data[ 'footer_data' ] = LayoutDataHelper::getDefaultFooterData();
 
         return $data;
     }

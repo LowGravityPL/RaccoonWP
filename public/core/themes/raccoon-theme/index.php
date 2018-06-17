@@ -5,6 +5,6 @@
 use RaccoonSite\DefaultPostHelper;
 
 $data            = Timber::get_context();
-$data[ 'posts' ] = DefaultPostHelper::get_current_posts_list();
+$data[ 'posts' ] = DefaultPostHelper::getCurrentPostsList();
 
 \Timber::render('index.twig', $data);

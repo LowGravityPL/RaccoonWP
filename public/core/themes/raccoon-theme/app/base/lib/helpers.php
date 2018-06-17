@@ -12,5 +12,5 @@ namespace RaccoonTheme;
  */
 function get_asset_path($asset_path)
 {
-    return AssetsLoader::instance()->get_asset_path($asset_path);
+    return AssetsLoader::getInstance()->getAssetPath($asset_path);
 }

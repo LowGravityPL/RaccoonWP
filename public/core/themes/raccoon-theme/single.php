@@ -7,6 +7,6 @@
 use RaccoonSite\DefaultPostHelper;
 
 $data            = Timber::get_context();
-$data[ 'post' ] = DefaultPostHelper::get_current_post_data();
+$data[ 'post' ] = DefaultPostHelper::getCurrentPostData();
 
 \Timber::render('single.twig', $data);

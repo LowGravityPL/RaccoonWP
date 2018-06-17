@@ -29,7 +29,7 @@ class AssetsLoader
     function __construct($distPath, $manifestPath)
     {
         $this->distFolderUri = get_stylesheet_directory_uri() . '/' . $distPath . '';
-        $this->assets        = $this->load_manifest(get_stylesheet_directory() . '/' . $manifestPath);
+        $this->assets        = $this->loadManifest(get_stylesheet_directory() . '/' . $manifestPath);
 
         self::$instance = $this;
     }
@@ -39,7 +39,7 @@ class AssetsLoader
      * @param string $manifest manifest.json location on disk
      * @return array
      */
-    private function load_manifest($manifest)
+    private function loadManifest($manifest)
     {
         if (file_exists($manifest)) {
             return json_decode(file_get_contents($manifest), true);
@@ -53,7 +53,7 @@ class AssetsLoader
      * @param string $name asset name/path
      * @return string
      */
-    public function get_asset_path($name)
+    public function getAssetPath($name)
     {
         if (isset($this->assets[ $name ])) {
             return $this->distFolderUri . $this->assets[ $name ];
@@ -62,7 +62,7 @@ class AssetsLoader
         }
     }
 
-    public static function instance()
+    public static function getInstance()
     {
 
         if (is_null(self::$instance)) {

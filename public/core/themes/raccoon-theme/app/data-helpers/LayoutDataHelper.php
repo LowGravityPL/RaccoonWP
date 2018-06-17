@@ -17,7 +17,7 @@ class LayoutDataHelper extends DefaultDataHelper
      *
      * @return array
      */
-    public static function get_default_header_data()
+    public static function getDefaultHeaderData()
     {
         //default RaccoonWP logo
         $logo_url = get_asset_path('assets/images/raccoon-logo_scaled.png');
@@ -45,7 +45,7 @@ class LayoutDataHelper extends DefaultDataHelper
      *
      * @return array
      */
-    public static function get_default_footer_data()
+    public static function getDefaultFooterData()
     {
         return [
             'copyright' => [

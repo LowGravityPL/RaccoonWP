@@ -4,6 +4,12 @@ namespace RaccoonSite;
 
 use RaccoonMUFramework\DefaultDataHelper;
 
+/**
+ * Class DefaultPostHelper contains static methods which provide basic data for rendering archive
+ * and single view for built-in post.
+ *
+ * @package RaccoonSite
+ */
 class DefaultPostHelper extends DefaultDataHelper
 {
 
@@ -12,7 +18,7 @@ class DefaultPostHelper extends DefaultDataHelper
      * It's nothing else than The Loop in disguise
      * @return array
      */
-    public static function get_current_posts_list()
+    public static function getCurrentPostsList()
     {
         global $wp_query;
         $posts = [];
@@ -21,7 +27,7 @@ class DefaultPostHelper extends DefaultDataHelper
             while ($wp_query->have_posts()) {
                 the_post();
 
-                $posts[] = self::get_post_card_data(
+                $posts[] = self::getPostCardData(
                     get_the_ID()
                 );
             }
@@ -36,7 +42,7 @@ class DefaultPostHelper extends DefaultDataHelper
      * @param $post_id
      * @return array
      */
-    public static function get_post_card_data($post_id)
+    public static function getPostCardData($post_id)
     {
         $post_tags       = get_the_tags($post_id) ?: [];
         $post_class      = get_post_class('', $post_id);
@@ -77,7 +83,7 @@ class DefaultPostHelper extends DefaultDataHelper
      *
      * @return array|null
      */
-    public static function get_current_post_data()
+    public static function getCurrentPostData()
     {
         global $wp_query;
         if (is_main_query() && $wp_query->have_posts()) {
