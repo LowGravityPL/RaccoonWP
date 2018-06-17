@@ -5,6 +5,10 @@ namespace RaccoonTheme;
 
 use RaccoonMUFramework\DefaultDataHelper;
 
+/**
+ * Simple class with static methods providing data for layout components like header of footer.
+ * @package RaccoonTheme
+ */
 class LayoutDataHelper extends DefaultDataHelper
 {
 
