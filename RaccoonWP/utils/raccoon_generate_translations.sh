@@ -10,14 +10,17 @@ command -v xgettext >/dev/null 2>&1 || {
 # Edit below values to fit your needs
 
 DOMAIN=Raccoon
-THEME=raccoon-theme
+THEME=raccoon-twig
 MU_PLUGINS_SITE=raccoon-site
 
 THEME_ROOT=../../public/core/themes/$THEME
 MU_PLUGINS_ROOT=../../public/core/mu-plugins/$MU_PLUGINS_SITE
 
-TRANSLATIONS_DIR=translations
-POT_FILE=$TRANSLATIONS_DIR/$DOMAIN.pot
+THEME_TRANSLATIONS_DIR=app/translations
+MU_PLUGINS_TRANSLATIONS_DIR=translations
+
+THEME_POT_FILE=$THEME_TRANSLATIONS_DIR/$DOMAIN.pot
+MU_PLUGINS_POT_FILE=$MU_PLUGINS_TRANSLATIONS_DIR/$DOMAIN.pot
 
 TMP_PHP_LIST=/tmp/php_files.txt
 TMP_TWIG_LIST=/tmp/twig_files.txt
@@ -37,15 +40,15 @@ find ./ -maxdepth 1 -type f -iname "*.twig" >> $TMP_TWIG_LIST
 find ./app ./page-templates -type f -iname "*.blade.php" > $TMP_BLADE_LIST
 find ./ -maxdepth 1 -type f -iname "*.blade.php" >> $TMP_BLADE_LIST
 
-if [ -e $POT_FILE ]; then
+if [ -e $THEME_POT_FILE ]; then
 	echo "pot file already exists, merging"
-	xgettext --files-from=$TMP_PHP_LIST $XGETTEXT_OPTIONS --omit-header --join-existing --output=$POT_FILE
+	xgettext --files-from=$TMP_PHP_LIST $XGETTEXT_OPTIONS --omit-header --join-existing --output=$THEME_POT_FILE
 else
 	echo "no pot file, creating new one, remember to fix header"
-	xgettext --files-from=$TMP_PHP_LIST $XGETTEXT_OPTIONS --output=$POT_FILE
+	xgettext --files-from=$TMP_PHP_LIST $XGETTEXT_OPTIONS --output=$THEME_POT_FILE
 fi
-xgettext --language=Python --files-from=$TMP_TWIG_LIST $XGETTEXT_OPTIONS --omit-header --join-existing --output=$POT_FILE
-xgettext --language=Python --files-from=$TMP_BLADE_LIST $XGETTEXT_OPTIONS --omit-header --join-existing --output=$POT_FILE
+xgettext --language=Python --files-from=$TMP_TWIG_LIST $XGETTEXT_OPTIONS --omit-header --join-existing --output=$THEME_POT_FILE
+xgettext --language=Python --files-from=$TMP_BLADE_LIST $XGETTEXT_OPTIONS --omit-header --join-existing --output=$THEME_POT_FILE
 
 # Do almost the same thing for mu-plugins
 
@@ -54,12 +57,12 @@ cd $MU_PLUGINS_ROOT || exit 1
 
 find . -type f -iname "*.php" > $TMP_PHP_LIST
 
-if [ -e $POT_FILE ]; then
+if [ -e $MU_PLUGINS_POT_FILE ]; then
 	echo "pot file already exists, merging"
-	xgettext --files-from=$TMP_PHP_LIST $XGETTEXT_OPTIONS --omit-header --join-existing --output=$POT_FILE
+	xgettext --files-from=$TMP_PHP_LIST $XGETTEXT_OPTIONS --omit-header --join-existing --output=$MU_PLUGINS_POT_FILE
 else
 	echo "no pot file, creating new one, remember to fix header"
-	xgettext --files-from=$TMP_PHP_LIST $XGETTEXT_OPTIONS --output=$POT_FILE
+	xgettext --files-from=$TMP_PHP_LIST $XGETTEXT_OPTIONS --output=$MU_PLUGINS_POT_FILE
 fi
 
 exit 0

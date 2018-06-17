@@ -13,6 +13,6 @@ function setup_theme_translations()
 {
     load_theme_textdomain(
         'raccoonwp',
-        get_template_directory() . '/translations'
+        get_template_directory() . '/app/translations'
     );
 }
