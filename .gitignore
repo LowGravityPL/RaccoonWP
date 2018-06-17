@@ -28,6 +28,6 @@
 
 
 #RaccoonWP theme
-/public/core/themes/raccoon-theme/node_modules/
-/public/core/themes/raccoon-theme/build-util/user.config.js
-/public/core/themes/raccoon-theme/dist/
+/public/core/themes/raccoon-twig/node_modules/
+/public/core/themes/raccoon-twig/build-util/user.config.js
+/public/core/themes/raccoon-twig/dist/
