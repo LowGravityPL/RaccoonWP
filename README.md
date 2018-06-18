@@ -14,6 +14,16 @@ Raccoon is best suited for fresh projects (but there is no problem in implementi
 ### Documentation
 Please find [the documentation on our github page](https://raccoonwp.lowgravity.pl)
 
+### Status
+![Version](https://img.shields.io/badge/Version-1.0.0--alpha-yellowgreen.svg)
+![PHP from Packagist](https://img.shields.io/packagist/php-v/lowgravitypl/raccoonwp.svg)
+[![License](https://poser.pugx.org/lowgravitypl/raccoonwp/license)](https://packagist.org/packages/lowgravitypl/raccoonwp)
+
+Packagist:
+
+[![Latest Stable Version](https://poser.pugx.org/lowgravitypl/raccoonwp/v/stable)](https://packagist.org/packages/lowgravitypl/raccoonwp)
+[![Latest Unstable Version](https://poser.pugx.org/lowgravitypl/raccoonwp/v/unstable)](https://packagist.org/packages/lowgravitypl/raccoonwp)
+[![composer.lock](https://poser.pugx.org/lowgravitypl/raccoonwp/composerlock)](https://packagist.org/packages/lowgravitypl/raccoonwp)
 ### Features
 - Architecture:
     - [PHP Composer](https://getcomposer.org/) support.
@@ -39,9 +49,6 @@ Please find [the documentation on our github page](https://raccoonwp.lowgravity.
     - [On the roadmap] Child theme support.
     
     See our [recipes section](https://raccoonwp.lowgravity.pl/recipes) to see how to tweak the project to your needs.
-
-### Current version
-1.0.0-alpha1
 
 ### License
 [MIT](LICENSE.md) © [LowGravity.pl](https://lowgravity.pl)
