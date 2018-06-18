@@ -5,15 +5,15 @@ const commonPaths = require('../common/paths');
 
 module.exports = env => {
 
-	const devPlugins = [
-		new webpack.DefinePlugin({
-			PRODUCTION: JSON.stringify(false),
-		}),
-		// new WebpackBundleAnalyzer(),
-	];
+    const devPlugins = [
+        new webpack.DefinePlugin({
+            PRODUCTION: JSON.stringify(false),
+        }),
+        // new WebpackBundleAnalyzer(),
+    ];
 
-	return {
-		devtool: 'cheap-eval-source-map',
-		plugins: devPlugins
-	};
+    return {
+        devtool: 'cheap-eval-source-map',
+        plugins: devPlugins
+    };
 };

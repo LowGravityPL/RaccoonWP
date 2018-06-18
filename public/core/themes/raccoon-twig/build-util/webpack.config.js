@@ -8,30 +8,30 @@ const commonPlugins = require('./common/plugins');
 
 module.exports = ({mode, presets, isWatching} = {mode: "production", presets: [], isWatching: false}) => {
 
-	let config = {
-		mode,
-		context:   commonPaths.sourcePath,
-		stats:     'normal',
-		entry:     {
-			'app': [
-				'./scripts/app.js',
-				'./styles/app.scss'
-			]
-		},
-		output:    {
-			publicPath: commonPaths.outputPath,
-			path:       commonPaths.outputPath,
-			filename:   '[name].[hash].js',
-		},
-		externals: {
-			jquery: 'jQuery',
-		},
-	};
+    let config = {
+        mode,
+        context:   commonPaths.sourcePath,
+        stats:     'normal',
+        entry:     {
+            'app': [
+                './scripts/app.js',
+                './styles/app.scss'
+            ]
+        },
+        output:    {
+            publicPath: commonPaths.outputPath,
+            path:       commonPaths.outputPath,
+            filename:   '[name].[hash].js',
+        },
+        externals: {
+            jquery: 'jQuery',
+        },
+    };
 
-	return webpackMerge(
-		config,
-		commonModules(isWatching),
-		commonPlugins,
-		modeConfig(mode)
-	);
+    return webpackMerge(
+        config,
+        commonModules(isWatching),
+        commonPlugins,
+        modeConfig(mode)
+    );
 };

@@ -8,7 +8,7 @@ __________                                         __      ____________
  |____|_  /(____  /\\___  >___  >____/ \\____/|___|  /\\__/\\  /  |____|    
         \\/      \\/     \\/    \\/                  \\/      \\/             
         
- Documentation, issues, contributions welcome at https://raccoon.lowgravity.pl
+ Documentation, issues, contributions welcome at https://raccoonwp.lowgravity.pl
 ========================================================================================
 `;
 //Display our nice banner
@@ -33,65 +33,65 @@ let webpackConfig = require('./webpack.config')({mode: 'development', isWatching
 let userConfig = {};
 
 try {
-	userConfig = require('./user.config.js');
-	console.log('--- Loading user configuration. ---');
+    userConfig = require('./user.config.js');
+    console.log('--- Loading user configuration. ---');
 } catch (err) {
-	console.log('\nUser configuration not found. Running with default parameters.');
-	console.log('You can provide your configuration by defining user.config.js file next to webpack configuration.\n');
+    console.log('\nUser configuration not found. Running with default parameters.');
+    console.log('You can provide your configuration by defining user.config.js file next to webpack configuration.\n');
 }
 
 //default watch config
 const config = webpackMerge({
-	bsHost:     'localhost',
-	bsPort:     3000,
-	bsOpen:     false,
-	devUrl:     'https://raccoon.test',
-	watchFiles: [
-		//do not put JS in here!!
-		'dist/**/*.css',
-		'templates/**/*.php',
-		'page-templates/**/*.php',
-		'lib/**/*.php',
-		'*.php'
-	]
+    bsHost:     'localhost',
+    bsPort:     3000,
+    bsOpen:     false,
+    devUrl:     'https://raccoon.test',
+    watchFiles: [
+        //do not put JS in here!!
+        'dist/**/*.css',
+        'templates/**/*.php',
+        'page-templates/**/*.php',
+        'lib/**/*.php',
+        '*.php'
+    ]
 }, userConfig);
 
 // Let's get ready to rumbleeeee
 
 //add hot module for each entry
 webpackConfig = addDevEntries(webpackConfig, {
-	hot: true
+    hot: true
 });
 
 //add hot module replacement plugin to the stack
 webpackConfig.plugins.push(
-	new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin()
 );
 
 const bundler    = webpack(webpackConfig);
 const middleware = [
-	webpackDevMiddleware(bundler, {
-		publicPath:  webpackConfig.output.publicPath,
-		writeToDisk: true,
-		hot:         true,
-		stats:       {
-			colors:  true,
-			modules: false
-		}
-	}),
-	webpackHotMiddleware(bundler)
+    webpackDevMiddleware(bundler, {
+        publicPath:  webpackConfig.output.publicPath,
+        writeToDisk: true,
+        hot:         true,
+        stats:       {
+            colors:  true,
+            modules: false
+        }
+    }),
+    webpackHotMiddleware(bundler)
 ];
 
 if (url.parse(config.devUrl).protocol === 'https:') {
-	process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
+    process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
 }
 
 browserSync.init({
-	host:          config.bsHost,
-	port:          config.bsPort,
-	proxy:         config.devUrl,
-	open:          config.bsOpen,
-	injectChanges: false,
-	files:         config.watchFiles,
-	middleware:    middleware,
+    host:          config.bsHost,
+    port:          config.bsPort,
+    proxy:         config.devUrl,
+    open:          config.bsOpen,
+    injectChanges: false,
+    files:         config.watchFiles,
+    middleware:    middleware,
 });
