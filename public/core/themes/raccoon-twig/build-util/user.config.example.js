@@ -22,7 +22,7 @@ module.exports = {
     productionBuild: {
         //performance hints
         enablePerformanceHints: true, //should we enable performance hints on production builds
-        maxAssetSize:           100000, //size in bytes after we should display a warning
+        maxAssetSize:           1000000, //size in bytes after we should display a warning
 
         //source maps
         enableSourceMaps: true

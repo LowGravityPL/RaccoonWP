@@ -24,7 +24,7 @@ module.exports = env => {
         if (userConfig.productionBuild.enablePerformanceHints) {
             prodConfig.performance = {
                 hints:        "warning", // enum
-                maxAssetSize: 1000, // int (in bytes),
+                maxAssetSize: userConfig.productionBuild.maxAssetSize ? userConfig.productionBuild.maxAssetSize : 100000 , // int (in bytes),
                 assetFilter:  function (assetFilename) {
                     // Function predicate that provides asset filenames
                     return assetFilename.endsWith('.css') || assetFilename.endsWith('.js');
