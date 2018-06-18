@@ -14,21 +14,22 @@ module.exports = {
         ),
         new Copy([
             {
-                context: `${commonPaths.sourcePath}/images/`,
-                from:    '**/*.*',
-                to:      'images/'
+                from:    'images/**/*',
+                to:      `${commonPaths.outputPath}`
             },
             {
-                context: `${commonPaths.sourcePath}/fonts/`,
-                from:    '**/*.*',
-                to:      'fonts/'
+                from:    'fonts/**/*',
+                to:      `${commonPaths.outputPath}`
             },
             {
-                context: `${commonPaths.sourcePath}/other/`,
-                from:    '**/*.*',
-                to:      'other/'
+                from:    '/other/**/*',
+                to:      `${commonPaths.outputPath}`
             }
-        ]),
+        ], {
+            copyUnmodified: true,
+            context: `${commonPaths.sourcePath}`,
+            debug: 'debug'
+        }),
         new Manifest({
             output: 'assets-manifest.json',
             customize(entry, original, manifest, asset) {

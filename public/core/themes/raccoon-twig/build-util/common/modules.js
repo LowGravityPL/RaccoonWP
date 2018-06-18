@@ -38,6 +38,7 @@ module.exports = isWatching => {
 
     const internalAssetsRules = {
         test: /\.(eot|woff2|woff|ttf|svg|gif|png|jpe?g|ico)$/,
+        include: commonPaths.sourcePath,
         use:  {
             loader:  'file-loader',
             options: {

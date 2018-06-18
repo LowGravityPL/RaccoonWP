@@ -17,7 +17,6 @@ console.log('\x1b[33m%s\x1b[0m', bannerManifest);
 /** -------------------------------------------------------
  * Real code starts here
  */
-
 const browserSync          = require('browser-sync').create();
 const url                  = require('url');
 const webpack              = require('webpack');
@@ -28,7 +27,7 @@ const addDevEntries        = require('./helpers/addDevServerEntry');
 
 //Load basic dev config
 let webpackConfig = require('./webpack.config')({mode: 'development', isWatching: true});
-const userConfig = require('./helpers/userConfigProvider')();
+const userConfig  = require('./helpers/userConfigProvider')();
 
 //default watch config
 const config = webpackMerge({
