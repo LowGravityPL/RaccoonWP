@@ -14,5 +14,17 @@ module.exports = {
         'page-templates/**/*.php',
         'lib/**/*.php',
         '*.php'
-    ] //which files should be watch by browsersync process
+    ], //which files should be watch by browsersync process
+
+    //--------------------------
+    // Production Build process configuration
+    //--------------------------
+    productionBuild: {
+        //performance hints
+        enablePerformanceHints: true, //should we enable performance hints on production builds
+        maxAssetSize:           100000, //size in bytes after we should display a warning
+
+        //source maps
+        enableSourceMaps: true
+    }
 };

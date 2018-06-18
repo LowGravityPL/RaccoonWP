@@ -1,18 +1,12 @@
 const webpack                   = require('webpack');
 const {default: ImageminPlugin} = require('imagemin-webpack-plugin');
+const userConfig                = require('../helpers/userConfigProvider')();
 
 module.exports = env => {
-    return {
-        devtool:     'source-map',
-        performance: {
-            hints:        "warning", // enum
-            maxAssetSize: 100000, // int (in bytes),
-            assetFilter:  function (assetFilename) {
-                // Function predicate that provides asset filenames
-                return assetFilename.endsWith('.css') || assetFilename.endsWith('.js');
-            }
-        },
-        plugins:     [
+
+    let prodConfig = {
+        devtool: 'source-map',
+        plugins: [
             new webpack.DefinePlugin({
                 PRODUCTION: JSON.stringify(true),
             }),
@@ -25,4 +19,23 @@ module.exports = env => {
             })
         ]
     };
+
+    if (userConfig.productionBuild) {
+        if (userConfig.productionBuild.enablePerformanceHints) {
+            prodConfig.performance = {
+                hints:        "warning", // enum
+                maxAssetSize: 1000, // int (in bytes),
+                assetFilter:  function (assetFilename) {
+                    // Function predicate that provides asset filenames
+                    return assetFilename.endsWith('.css') || assetFilename.endsWith('.js');
+                }
+            };
+        }
+
+        if (userConfig.productionBuild.enableSourceMaps === false) {
+            prodConfig.devtool = 'none';
+        }
+    }
+
+    return prodConfig;
 };

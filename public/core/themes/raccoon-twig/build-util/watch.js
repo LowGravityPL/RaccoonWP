@@ -28,17 +28,7 @@ const addDevEntries        = require('./helpers/addDevServerEntry');
 
 //Load basic dev config
 let webpackConfig = require('./webpack.config')({mode: 'development', isWatching: true});
-
-//load user config file.
-let userConfig = {};
-
-try {
-    userConfig = require('./user.config.js');
-    console.log('--- Loading user configuration. ---');
-} catch (err) {
-    console.log('\nUser configuration not found. Running with default parameters.');
-    console.log('You can provide your configuration by defining user.config.js file next to webpack configuration.\n');
-}
+const userConfig = require('./helpers/userConfigProvider')();
 
 //default watch config
 const config = webpackMerge({

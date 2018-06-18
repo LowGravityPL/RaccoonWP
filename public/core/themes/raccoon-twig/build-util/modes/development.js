@@ -3,6 +3,7 @@ const commonPaths = require('../common/paths');
 
 // const WebpackBundleAnalyzer = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
+
 module.exports = env => {
 
     const devPlugins = [
