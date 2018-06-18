@@ -21,10 +21,36 @@
     .site-title {
         margin: 1rem auto;
     }
+    
     .site-description {
         margin: 0rem auto 1rem;
         text-transform: uppercase;
         font-style: italic;
         font-weight: 300;
+    }
+
+    .nav {
+        display: flex;
+        list-style: none;
+
+        li {
+            display: block;
+            margin: 0;
+            padding: 0;
+            text-transform: uppercase;
+            
+            a {
+                display: block;
+                margin: 0;
+                padding: 10px 12px;
+                color: #000;
+                opacity: 0.7;
+        
+                &:hover {
+                    text-decoration: none;
+                    opacity: 1;
+                }
+            }
+        }
     }
 }

@@ -29,8 +29,11 @@ function initialize_twig_support() {
     function add_to_timber_context($data)
     {
         //add default header data to all templates
-        $data[ 'header_data' ] = LayoutDataHelper::getDefaultHeaderData();
+        $data[ 'header_data' ][ 'info' ] = LayoutDataHelper::getDefaultHeaderData();
 
+        //add menu
+        $data[ 'header_data' ][ 'menu_header' ] = new \Timber\Menu( 'primary_header' );
+        
         //add default footer data to all templates
         $data[ 'footer_data' ] = LayoutDataHelper::getDefaultFooterData();
 
