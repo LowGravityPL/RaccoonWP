@@ -18,7 +18,9 @@
     "scripts": {
         "webpack": "webpack --config build-util/webpack.config.js",
         "build": "npm run webpack -- --env.mode development",
+        "build:dev:analyze": "npm run build:dev -- --env.presets analyze",
         "build:prod": "npm run webpack -- --env.mode production",
+        "build:prod:analyze": "npm run build:prod -- --env.presets analyze",
         "watch": "node build-util/watch.js",
         "lint": "eslint assets/scripts",
         "test": "echo \"Error: no test specified\" && exit 1"

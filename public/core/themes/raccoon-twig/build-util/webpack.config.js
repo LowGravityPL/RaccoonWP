@@ -5,6 +5,8 @@ const modeConfig   = mode => require(`./modes/${mode}`)(mode);
 const commonPaths   = require('./common/paths');
 const commonModules = isWatching => require('./common/modules')(isWatching);
 const commonPlugins = require('./common/plugins');
+const presetConfig = require("./helpers/loadPresets");
+
 
 module.exports = ({mode, presets, isWatching} = {mode: "production", presets: [], isWatching: false}) => {
 
@@ -32,6 +34,7 @@ module.exports = ({mode, presets, isWatching} = {mode: "production", presets: []
         config,
         commonModules(isWatching),
         commonPlugins,
-        modeConfig(mode)
+        modeConfig(mode),
+        presetConfig({ mode, presets })
     );
 };
