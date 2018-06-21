@@ -1,6 +1,6 @@
-const Clean    = require('clean-webpack-plugin');
-const Copy     = require('copy-webpack-plugin');
-const Manifest = require('webpack-assets-manifest');
+const Clean          = require('clean-webpack-plugin');
+const Copy           = require('copy-webpack-plugin');
+const ManifestPlugin = require('webpack-manifest-plugin');
 
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
@@ -30,28 +30,9 @@ module.exports = {
             context: `${commonPaths.sourcePath}`,
             debug: 'debug'
         }),
-        new Manifest({
-            output: 'assets-manifest.json',
-            customize(entry, original, manifest, asset) {
-                if (manifest.isMerging) {
-                    // Do something
-                }
-
-                if (entry.key.toLowerCase().endsWith('.map')) {
-                    return false;
-                }
-
-                // You can directly modify key/value on the `entry` argument
-                // or you can return a new object that has key and/or value properties.
-                // If either the key or value is missing, the defaults will be used.
-                //
-                // The key should be a string and the value can be anything that can be JSON stringified.
-                // If something else (or nothing) is returned, the manifest will add the entry normally.
-                return {
-                    key:   `assets/${entry.key}`,
-                    value: `dist/${entry.value}`,
-                };
-            },
+        new ManifestPlugin({
+            fileName: 'assets-manifest.json',
+            publicPath: 'dist/'
         }),
         new MiniCssExtractPlugin({
             filename: "[name].[contenthash].css",

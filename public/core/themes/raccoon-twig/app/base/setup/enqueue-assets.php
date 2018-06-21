@@ -12,14 +12,14 @@ function add_theme_assets()
 {
     wp_enqueue_style(
         'raccoonwp-main-css',
-        get_asset_path('assets/app.css'),
+        get_asset_path('app.css'),
         false,
         null
     );
 
     wp_enqueue_script(
         'raccoon-main-js',
-        get_asset_path('assets/app.js'),
+        get_asset_path('app.js'),
         ['jquery'],
         null,
         true
