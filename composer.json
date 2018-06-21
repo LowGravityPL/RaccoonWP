@@ -65,7 +65,6 @@
         "johnpbloch/wordpress": "^4.9.6",
         "roots/wp-password-bcrypt": "^1.0",
         "vlucas/phpdotenv": "^2.4",
-        "wpackagist-plugin/gutenberg": "3.0.1",
         "wpackagist-plugin/timber-library": "1.7.1"
     }
 }
