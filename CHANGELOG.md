@@ -1,3 +1,8 @@
+1.0.0-RC1 [21st of June 2018]
+- update autoprefixer
+- remove Gutenberg from composer dependencies
+- ensure that copied assets land in assets-manifest.json file, that required a change of webpack manifest plugin
+
 1.0.0-beta [18th of June 2018]
 - Added a lot of documentation
 - Modified watch mode for theme  
