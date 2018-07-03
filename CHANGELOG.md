@@ -1,5 +1,7 @@
 1.0.0-RC2/stable [??? 2018]
 - bumped up minimum PHP version to 7.1.3 due to the fact that 7.0 php will reach end of support by the end of 2018 
+- updated npm dependencies, bumped up supported webpack to 4.14
+- added docker support (see separate repository [https://github.com/LowGravityPL/raccoon-docker](https://github.com/LowGravityPL/raccoon-docker))
 
 1.0.0-RC1 [21st of June 2018]
 - update autoprefixer

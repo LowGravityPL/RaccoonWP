@@ -1,6 +1,6 @@
 ![RaccoonWP logo](https://lowgravity.pl/raccoon-head-scaled-small.png)
 # RaccoonWP
-**This is 1.0.0-RC1 release. If you find any issues let us know**
+**This is 1.0.0-RC2 release. If you find any issues let us know**
 
 Raccoon is a modern architecture stack and a starter theme for [WordPress](https://wordpress.org/). 
 
@@ -39,7 +39,7 @@ Packagist:
     - [On the roadmap] E2E tests
     - [On the roadmap] Docker support
 - Theme:
-    - Customizable theme build process based on newest [Webpack 4.12](https://webpack.js.org/) with all its features
+    - Customizable theme build process based on newest [Webpack 4.14](https://webpack.js.org/) with all its features
     like dead code elimination, bundle analysis, watch process and more.
     - Flexible CSS: Plain SASS by default / Bootstrap 4 / Foundation 5 / Bourbon/Neat or anything else (check [recipes section](https://raccoonwp.lowgravity.pl/recipes)).
     - Modern JS: all newest features like ES6, modules, spreads, destructuring objects and arrays etc.
