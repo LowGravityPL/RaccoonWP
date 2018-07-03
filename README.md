@@ -28,16 +28,17 @@ Packagist:
 - Architecture:
     - [PHP Composer](https://getcomposer.org/) support.
     - [WordPress](https://wordpress.org/) Core as a dependency.
+    - Full [Docker](https://github.com/LowGravityPL/raccoon-docker) image for your local development
+    - Support for [Wp-Cli](https://wp-cli.org/).
     - Better directory structure and more secure than default WordPress install.
     - Environment-based configuration.
-    - Support for [Wp-Cli](https://wp-cli.org/).
-    - Proper project data management - for example by storing CPT configuration outside theme (when needed).
+    - Proper project data management.
     - Ability to disable plugins per environment.  
-    - Internationalization built in from the beginning.
+    - Internationalization built in from the beginning.    
     - [Coming soon] Multisite not tested yet! Though it should work without issues.
     - [On the roadmap] Unit tests
     - [On the roadmap] E2E tests
-    - [On the roadmap] Docker support
+    - [On the roadmap] Progressive Web App and Service Worker 
 - Theme:
     - Customizable theme build process based on newest [Webpack 4.14](https://webpack.js.org/) with all its features
     like dead code elimination, bundle analysis, watch process and more.
