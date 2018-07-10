@@ -3,13 +3,9 @@
     class="no-js"
     {{ fn('language_attributes') }}
 >
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    {% include 'blocks/favicons.twig' %}
-    {{ fn('wp_head') }}
-</head>
+{% block head %}
+    {% include 'blocks/head.twig' %}
+{% endblock %}
 <body>
 {% block header %}
     {% include 'layout/header-default.twig' with header_data only %}
