@@ -1,0 +1,32 @@
+.raccoon-sidebar {
+	@extend %generic-component;
+
+	.container {
+		@include container();
+
+		display: flex;
+		flex-direction: column;
+		ul {
+			list-style: none;
+
+			li {
+				display: block;
+				margin: 0;
+				padding: 0;
+				text-transform: uppercase;
+
+				a {
+					display: block;
+					margin: 0;
+					color: #000;
+					opacity: 0.7;
+
+					&:hover {
+						text-decoration: none;
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}

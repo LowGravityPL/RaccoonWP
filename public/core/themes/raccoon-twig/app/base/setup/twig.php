@@ -37,6 +37,9 @@ function initialize_twig_support() {
         //add default footer data to all templates
         $data[ 'footer_data' ] = LayoutDataHelper::getDefaultFooterData();
 
+        //add sidebar 
+        $data[ 'sidebar' ][ 'data' ] = \Timber::get_widgets( 'sidebar-primary' );
+
         return $data;
     }
 
