@@ -62,9 +62,9 @@
         "php": "^7.1.3",
         "composer/installers": "^1.5",
         "johnbillion/extended-cpts": "^4.2",
-        "johnpbloch/wordpress": "^4.9.6",
+        "johnpbloch/wordpress": "^4.9.7",
         "roots/wp-password-bcrypt": "^1.0",
-        "vlucas/phpdotenv": "^2.4",
+        "vlucas/phpdotenv": "^2.5",
         "wpackagist-plugin/timber-library": "1.7.1"
     }
 }
