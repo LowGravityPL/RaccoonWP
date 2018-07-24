@@ -1,3 +1,6 @@
+1.0.1
+- fix .env.sample default data
+
 1.0.0  [24th of July 2018]
 - bumped up minimum PHP version to 7.1.3 due to the fact that 7.0 php will reach end of support by the end of 2018 
 - updated npm dependencies, bumped up supported webpack to 4.16
