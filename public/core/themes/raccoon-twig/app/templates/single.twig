@@ -3,14 +3,14 @@
 {% block content %}
     <section class="post-archive container">
         {% if post %}
+            {% include 'content/single/post-single.twig' with post only %}
             {% block sidebar %}
-                {% if sidebar[ 'data' ] %}
-                    {%  include 'components/sidebar.twig' with { 'sidebar_data': sidebar['data'] } only %}
+                {% if sidebar.data %}
+                    {% include 'components/sidebar.twig' with { 'sidebar_data': sidebar.data } only %}
                 {% endif %}
             {% endblock %}
-            {%  include 'content/single/post-single.twig' with post only %}
         {% else %}
-            {%  include 'content/not-found.twig' %}
+            {% include 'content/not-found.twig' %}
         {% endif %}
     </section>
 {% endblock %}
