@@ -15,7 +15,7 @@
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
         "make-pot": [
-            "bash RaccoonWP/utils/raccoon_generate_translations.sh"
+            "bash RaccoonWP/utils/generate-translations.sh"
         ]
     },
     "authors": [
