@@ -1,3 +1,33 @@
+.post-single-wrapper {
+    @include container();
+
+    display: flex;
+    flex-direction: row;
+
+    .site-sidebar {
+        width: 25%;
+    }
+
+    .post-single {
+        width: 75%;
+    }
+
+    @media(min-width: $screen-md-min + 1) {
+        .post-single {
+            margin-right: $desktop-gutter*2;
+        }
+    }
+
+    @media(max-width: $screen-md-min) {
+        flex-direction: column;
+
+        .post-single,
+        .site-sidebar {
+            width: 100%;
+        }
+    }
+}
+
 .post-single {
     @extend %generic-component;
 }

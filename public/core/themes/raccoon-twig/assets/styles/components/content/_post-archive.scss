@@ -1,36 +1,10 @@
-.post-archive {
+.post-archive-wrapper {
     @extend %generic-component;
+    @include container();
 
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-around;
-
-    & > * {
-        flex: 1 1 auto;
-    }
-
-    .site-sidebar {
-        width: 25%;
-    }
-
-    .post-single {
-        width: 75%;
-    }
-
-    &.container {
-        @include container();
-    }
-
-    @media(min-width: $screen-md-min + 1) {
-        & > * {
-            margin-right: $desktop-gutter;
-
-            &:last-child {
-                margin-right: 0;
-            }
-        }
-    }
+    justify-content: space-between;
+    flex-wrap: wrap;
 
     @media(max-width: $screen-md-min) {
         flex-direction: column;

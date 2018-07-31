@@ -1,11 +1,11 @@
 {% extends 'base/layout.twig' %}
 
 {% block content %}
-    <section class="post-archive container">
+    <section class="post-archive-wrapper">
         {% for post in posts %}
-            {%  include 'content/archive/post-card.twig' with post only %}
+            {% include 'content/archive/post-card.twig' with post only %}
         {% else %}
-            {%  include 'content/not-found.twig' %}
+            {% include 'content/not-found.twig' %}
         {% endfor %}
     </section>
 {% endblock %}
