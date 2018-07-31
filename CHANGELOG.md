@@ -1,4 +1,4 @@
-1.0.1
+1.1.0
 - fix .env.sample default data
 - change default environments' config files
 

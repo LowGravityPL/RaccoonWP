@@ -11,7 +11,7 @@ command -v xgettext >/dev/null 2>&1 || {
 
 DOMAIN=Raccoon
 THEME=raccoon-twig
-MU_PLUGINS_SITE=raccoon-site
+MU_PLUGINS_SITE=site-framework
 
 THEME_ROOT=../../public/core/themes/$THEME
 MU_PLUGINS_ROOT=../../public/core/mu-plugins/$MU_PLUGINS_SITE

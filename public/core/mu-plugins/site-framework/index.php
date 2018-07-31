@@ -17,5 +17,5 @@ require_once(__DIR__ . '/entities/tax/sample-tax.php');
 //load translations
 load_muplugin_textdomain(
     'raccoonwp',
-    '/raccoon-site/translations'
+    '/site-framework/translations'
 );
