@@ -1,3 +1,6 @@
+1.2.0 [28th of August 2018]
+- update npm dependencies 
+ 
 1.1.0 [2nd of August 2018]
 - fix .env.sample default data
 - change default environments' config files
