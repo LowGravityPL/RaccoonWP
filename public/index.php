@@ -4,4 +4,4 @@
 define('WP_USE_THEMES', true);
 
 /** Load wordpress */
-require __DIR__ . '/wordpress/wp-blog-header.php';
+require __DIR__ . '/wp/wp-blog-header.php';

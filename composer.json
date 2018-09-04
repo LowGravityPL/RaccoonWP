@@ -45,7 +45,7 @@
                 "type:wordpress-theme"
             ]
         },
-        "wordpress-install-dir": "public/wordpress"
+        "wordpress-install-dir": "public/wp"
     },
     "autoload": {
         "psr-4": {

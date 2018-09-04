@@ -13,7 +13,7 @@
 
 #RaccoonWP
 .env
-/public/wordpress
+/public/wp
 /public/core/debug.log
 /public/core/uploads/
 
