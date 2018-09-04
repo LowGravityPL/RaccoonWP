@@ -1,5 +1,6 @@
-1.2.0 [28th of August 2018]
-- update npm dependencies 
+1.2.0 [4th of September 2018]
+- update npm dependencies
+- change wordpress installation path from `public/wordpress` to `public/wp`
  
 1.1.0 [2nd of August 2018]
 - fix .env.sample default data
