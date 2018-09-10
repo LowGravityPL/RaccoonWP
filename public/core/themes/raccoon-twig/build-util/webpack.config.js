@@ -21,7 +21,7 @@ module.exports = ({mode, presets, isWatching} = {mode: "production", presets: []
             ]
         },
         output:    {
-            publicPath: commonPaths.outputPath,
+            publicPath: '/core/themes/raccoon-twig/dist/',
             path:       commonPaths.outputPath,
             filename:   '[name].[hash].js',
         },

@@ -1,6 +1,6 @@
 ![RaccoonWP logo](https://lowgravity.pl/raccoon-head-scaled-small.png)
 # RaccoonWP
-**This is 1.2.0 release. If you find any issues let us know**
+**This is 1.3.0 release. If you find any issues let us know**
 
 Raccoon is a modern architecture stack and a starter theme for [WordPress](https://wordpress.org/). 
 
@@ -15,7 +15,7 @@ Raccoon is best suited for fresh projects (but there is no problem in implementi
 Please find [the documentation on our github page](https://raccoonwp.lowgravity.pl)
 
 ### Status
-![Version](https://img.shields.io/badge/Version-1.2.0-green.svg)
+![Version](https://img.shields.io/badge/Version-1.3.0-green.svg)
 ![PHP from Packagist](https://img.shields.io/packagist/php-v/lowgravitypl/raccoonwp.svg)
 [![License](https://poser.pugx.org/lowgravitypl/raccoonwp/license)](https://packagist.org/packages/lowgravitypl/raccoonwp)
 
@@ -35,7 +35,7 @@ Packagist:
     - Proper project data management.
     - Ability to disable plugins per environment.  
     - Internationalization built in from the beginning.    
-    - [Coming soon] Multisite not tested yet! Though it should work without issues.
+    - [Coming soon] MultiSite not tested yet! Though it should work without issues.
     - [On the roadmap] Unit tests
     - [On the roadmap] E2E tests
     - [On the roadmap] Progressive Web App and Service Worker 

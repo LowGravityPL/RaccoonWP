@@ -1,3 +1,6 @@
+1.3.0 [10th of September 2018]
+- fix build process public path for assets.
+
 1.2.1 [10th of September 2018]
 - fix build process demanding babel-core 7.x
 

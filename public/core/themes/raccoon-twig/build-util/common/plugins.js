@@ -27,8 +27,7 @@ module.exports = {
             }
         ], {
             copyUnmodified: true,
-            context: `${commonPaths.sourcePath}`,
-            debug: 'debug'
+            context: `${commonPaths.sourcePath}`
         }),
         new ManifestPlugin({
             fileName: 'assets-manifest.json',
