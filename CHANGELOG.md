@@ -1,3 +1,6 @@
+1.2.1 [10th of September 2018]
+- fix build process demanding babel-core 7.x
+
 1.2.0 [4th of September 2018]
 - update npm dependencies
 - change wordpress installation path from `public/wordpress` to `public/wp`
