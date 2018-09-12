@@ -1,3 +1,6 @@
+1.4.0 [12th of September 2018]
+- fix ACF Json sync functionality
+
 1.3.0 [10th of September 2018]
 - fix build process public path for assets.
 
