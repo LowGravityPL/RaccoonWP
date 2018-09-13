@@ -13,7 +13,8 @@ module.exports = {
         'templates/**/*.php',
         'page-templates/**/*.php',
         'lib/**/*.php',
-        '*.php'
+        '*.php',
+        'app/templates/**/*.twig'
     ], //which files should be watch by browsersync process
 
     //--------------------------
