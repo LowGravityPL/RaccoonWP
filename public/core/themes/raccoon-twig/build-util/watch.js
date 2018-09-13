@@ -41,7 +41,8 @@ const config = webpackMerge({
         'templates/**/*.php',
         'page-templates/**/*.php',
         'lib/**/*.php',
-        '*.php'
+        '*.php',
+        'app/templates/**/*.twig'
     ]
 }, userConfig);
 
