@@ -11,7 +11,7 @@ function inject_login_logo_css()
 { ?>
 	<style type="text/css">
 		#login h1 a, .login h1 a {
-			background-image: url(<?= WPMU_PLUGIN_URL; ?>/raccoon-site/assets/raccoon-logo-scaled.png);
+			background-image: url(<?= WPMU_PLUGIN_URL; ?>/site-framework/assets/raccoon-logo-scaled.png);
 			background-size: contain;
 			width: 256px;
 			height: 223px;
