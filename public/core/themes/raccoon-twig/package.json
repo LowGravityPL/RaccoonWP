@@ -26,8 +26,8 @@
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "devDependencies": {
+        "@babel/core": "^7.1.2",
         "autoprefixer": "^9.2.1",
-        "babel-core": "^6.26.3",
         "babel-loader": "^8",
         "babel-preset-env": "^1.7.0",
         "browser-sync": "^2.26.3",
