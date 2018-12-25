@@ -1,3 +1,6 @@
+1.5.1 [??? of December 2018]
+- update Timber to 1.8.4
+
 1.5.0 [25th of December 2018]
 - update WP Core to 5.0.2 (with gutenberg)
 - update Timber to 1.8.3
