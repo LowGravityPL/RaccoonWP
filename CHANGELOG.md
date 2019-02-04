@@ -1,4 +1,4 @@
-1.5.1 [??? of December 2018]
+1.5.1 [4th of February 2019]
 - update Timber to 1.8.4
 - update NPM dependencies to newest versions
 - update WP Core to 5.0.3
