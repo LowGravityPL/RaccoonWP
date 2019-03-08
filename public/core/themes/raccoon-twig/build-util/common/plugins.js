@@ -8,29 +8,29 @@ const commonPaths = require('./paths');
 
 module.exports = {
     plugins: [
-        new Clean(
-            ['dist'],
-            commonPaths.rootPath
-        ),
+        new Clean({
+                dry:     false,
+                verbose: true,
+            }),
         new Copy([
             {
-                from:    'images/**/*',
-                to:      `${commonPaths.outputPath}`
+                from: 'images/**/*',
+                to:   `${commonPaths.outputPath}`
             },
             {
-                from:    'fonts/**/*',
-                to:      `${commonPaths.outputPath}`
+                from: 'fonts/**/*',
+                to:   `${commonPaths.outputPath}`
             },
             {
-                from:    '/other/**/*',
-                to:      `${commonPaths.outputPath}`
+                from: '/other/**/*',
+                to:   `${commonPaths.outputPath}`
             }
         ], {
             copyUnmodified: true,
-            context: `${commonPaths.sourcePath}`
+            context:        `${commonPaths.sourcePath}`
         }),
         new ManifestPlugin({
-            fileName: 'assets-manifest.json',
+            fileName:   'assets-manifest.json',
             publicPath: 'dist/'
         }),
         new MiniCssExtractPlugin({

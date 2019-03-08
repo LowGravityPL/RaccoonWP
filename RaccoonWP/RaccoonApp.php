@@ -133,7 +133,12 @@ class RaccoonApp
 
         //URLs and directories
         define('WP_HOME', getenv('WP_HOME'));
-        define('WP_SITEURL', getenv('WP_HOME') . '/' . self::WP_INSTALL_DIRECTORY_NAME);
+
+        if(getenv('WP_SITEURL') ) {
+            define('WP_SITEURL', getenv('WP_SITEURL'));
+        } else {
+            define('WP_SITEURL', getenv('WP_HOME') . '/' . self::WP_INSTALL_DIRECTORY_NAME);
+        }
 
         define('WP_CONTENT_DIR', $this->public_root_dir . '/' . self::CONTENT_DIRECTORY_NAME);
         define('WP_CONTENT_URL', WP_HOME . '/' . self::CONTENT_DIRECTORY_NAME);

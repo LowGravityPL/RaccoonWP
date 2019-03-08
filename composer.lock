@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "05c9a3344d0267f553228e68bbb6503c",
+    "content-hash": "2d622f9e59b10f7c11a49a25e66aa349",
     "packages": [
         {
             "name": "composer/installers",
@@ -176,20 +176,20 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "5.0.3",
+            "version": "5.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "516609b5bc19b1dd7cff9f9b4e9d1026363049ce"
+                "reference": "bdb6632aea9872b7c71322c724a8acfc0ec9ee7f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/516609b5bc19b1dd7cff9f9b4e9d1026363049ce",
-                "reference": "516609b5bc19b1dd7cff9f9b4e9d1026363049ce",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/bdb6632aea9872b7c71322c724a8acfc0ec9ee7f",
+                "reference": "bdb6632aea9872b7c71322c724a8acfc0ec9ee7f",
                 "shasum": ""
             },
             "require": {
-                "johnpbloch/wordpress-core": "5.0.3",
+                "johnpbloch/wordpress-core": "5.1.0",
                 "johnpbloch/wordpress-core-installer": "^1.0",
                 "php": ">=5.3.2"
             },
@@ -211,27 +211,27 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2019-01-09T18:42:21+00:00"
+            "time": "2019-02-22T18:16:29+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "5.0.3",
+            "version": "5.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "76c8acab20262adc0eb70d20aace3d36c2f3a16f"
+                "reference": "07c57b738c9967e5643641a44e659b5851c066af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/76c8acab20262adc0eb70d20aace3d36c2f3a16f",
-                "reference": "76c8acab20262adc0eb70d20aace3d36c2f3a16f",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/07c57b738c9967e5643641a44e659b5851c066af",
+                "reference": "07c57b738c9967e5643641a44e659b5851c066af",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
             },
             "provide": {
-                "wordpress/core-implementation": "5.0.3"
+                "wordpress/core-implementation": "5.1.0"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -251,7 +251,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2019-01-09T18:42:15+00:00"
+            "time": "2019-02-22T18:16:24+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -360,21 +360,80 @@
             "time": "2016-03-01T16:27:06+00:00"
         },
         {
-            "name": "vlucas/phpdotenv",
-            "version": "v2.5.2",
+            "name": "symfony/polyfill-ctype",
+            "version": "v1.10.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "cfd5dc225767ca154853752abc93aeec040fcf36"
+                "url": "https://github.com/symfony/polyfill-ctype.git",
+                "reference": "e3d826245268269cd66f8326bd8bc066687b4a19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/cfd5dc225767ca154853752abc93aeec040fcf36",
-                "reference": "cfd5dc225767ca154853752abc93aeec040fcf36",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/e3d826245268269cd66f8326bd8bc066687b4a19",
+                "reference": "e3d826245268269cd66f8326bd8bc066687b4a19",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.9"
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-ctype": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Ctype\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                },
+                {
+                    "name": "Gert de Pagter",
+                    "email": "backendtea@gmail.com"
+                }
+            ],
+            "description": "Symfony polyfill for ctype functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "ctype",
+                "polyfill",
+                "portable"
+            ],
+            "time": "2018-08-06T14:22:27+00:00"
+        },
+        {
+            "name": "vlucas/phpdotenv",
+            "version": "v2.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vlucas/phpdotenv.git",
+                "reference": "2a7dcf7e3e02dc5e701004e51a6f304b713107d5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/2a7dcf7e3e02dc5e701004e51a6f304b713107d5",
+                "reference": "2a7dcf7e3e02dc5e701004e51a6f304b713107d5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9",
+                "symfony/polyfill-ctype": "^1.9"
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.8.35 || ^5.0"
@@ -382,7 +441,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.5-dev"
+                    "dev-master": "2.6-dev"
                 }
             },
             "autoload": {
@@ -407,19 +466,19 @@
                 "env",
                 "environment"
             ],
-            "time": "2018-10-30T17:29:25+00:00"
+            "time": "2019-01-29T11:11:52+00:00"
         },
         {
             "name": "wpackagist-plugin/timber-library",
-            "version": "1.8.4",
+            "version": "1.9.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/timber-library/",
-                "reference": "tags/1.8.4"
+                "reference": "tags/1.9.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/timber-library.1.8.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/timber-library.1.9.1.zip",
                 "reference": null,
                 "shasum": null
             },
