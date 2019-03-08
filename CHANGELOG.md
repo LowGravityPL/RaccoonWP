@@ -2,6 +2,7 @@
 - update WP Core to 5.1
 - update Timber to 1.9.1
 - update NPM dependencies and apply changes to build process
+- add support for WP_SITEURL environment variable
 
 1.5.1 [4th of February 2019]
 - update Timber to 1.8.4
