@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e16be4cb4c1a2637c23aa9905a55c6eb",
+    "content-hash": "be40399e2d8bd47a68b1ce2eac6aaffd",
     "packages": [
         {
             "name": "composer/installers",
@@ -470,15 +470,15 @@
         },
         {
             "name": "wpackagist-plugin/timber-library",
-            "version": "1.9.1",
+            "version": "1.9.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/timber-library/",
-                "reference": "tags/1.9.1"
+                "reference": "tags/1.9.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/timber-library.1.9.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/timber-library.1.9.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
