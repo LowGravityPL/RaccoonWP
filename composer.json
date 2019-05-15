@@ -64,7 +64,7 @@
         "johnbillion/extended-cpts": "^4.2.3",
         "johnpbloch/wordpress": "5.2",
         "roots/wp-password-bcrypt": "^1.0",
-        "vlucas/phpdotenv": "2.6.1",
+        "vlucas/phpdotenv": "3.3.3",
         "wpackagist-plugin/timber-library": "1.9.4"
     }
 }

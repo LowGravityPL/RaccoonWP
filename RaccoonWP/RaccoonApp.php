@@ -86,7 +86,7 @@ class RaccoonApp
      */
     protected function initializeDotEnv()
     {
-        $dotenv = new Dotenv($this->root_dir);
+        $dotenv = Dotenv::create($this->root_dir);
 
         if (file_exists($this->root_dir . '/.env')) {
 
