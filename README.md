@@ -1,11 +1,11 @@
 ![RaccoonWP logo](https://lowgravity.pl/raccoon-head-scaled-small.png)
 # RaccoonWP
-**This is 1.6.0 release. If you find any issues let us know**
+**This is 1.6.2 release. If you find any issues let us know**
 
-Raccoon is a modern architecture stack and a starter theme for [WordPress](https://wordpress.org/). 
+Raccoon is a modern architecture stack and a starter theme for [WordPress](https://wordpress.org/).
 
-The stack is based on Composer on the backend. NodeJs with Webpack are used on the frontend. 
-This composition allows for quick and efficient development using the tools which are **state of the art in 2019.**  
+The stack is based on Composer on the backend. NodeJs with Webpack are used on the frontend.
+This composition allows for quick and efficient development using the tools which are **state of the art in 2019.**
 
 You should use it as your boilerplate/starter kit to obtain **optimal architecture with performance, extensibility and security** in mind.
 
@@ -15,7 +15,7 @@ Raccoon is best suited for fresh projects (but there is no problem in implementi
 Please find [the documentation on our github page](https://raccoonwp.lowgravity.pl)
 
 ### Status
-![Version](https://img.shields.io/badge/Version-1.6.0-green.svg)
+![Version](https://img.shields.io/badge/Version-1.6.2-green.svg)
 ![PHP from Packagist](https://img.shields.io/packagist/php-v/lowgravitypl/raccoonwp.svg)
 [![License](https://poser.pugx.org/lowgravitypl/raccoonwp/license)](https://packagist.org/packages/lowgravitypl/raccoonwp)
 
@@ -33,12 +33,12 @@ Packagist:
     - Better directory structure and more secure than default WordPress install.
     - Environment-based configuration.
     - Proper project data management.
-    - Ability to disable plugins per environment.  
-    - Internationalization built in from the beginning.    
+    - Ability to disable plugins per environment.
+    - Internationalization built in from the beginning.
     - [Coming soon] MultiSite not tested yet! Though it should work without issues.
     - [On the roadmap] Unit tests
     - [On the roadmap] E2E tests
-    - [On the roadmap] Progressive Web App and Service Worker 
+    - [On the roadmap] Progressive Web App and Service Worker
 - Theme:
     - Customizable theme build process based on newest [Webpack 4.29](https://webpack.js.org/) with all its features
     like dead code elimination, bundle analysis, watch process and more.
@@ -47,9 +47,9 @@ Packagist:
     - NPM: node package manager allowing to import various 3rd party libraries into the project.
     - uses Twig (default) or Blade templating (or you can go old plain WordPress way).
     - Vue? React? We got you covered, check [recipes section](https://raccoonwp.lowgravity.pl/recipes).
-    - [Gutenberg](https://wordpress.org/gutenberg/) support. 
+    - [Gutenberg](https://wordpress.org/gutenberg/) support.
     - [On the roadmap] Child theme support.
-    
+
     See our [recipes section](https://raccoonwp.lowgravity.pl/recipes) to see how to tweak the project to your needs.
 
 ### License

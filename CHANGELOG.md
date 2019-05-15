@@ -1,3 +1,8 @@
+1.6.2 [15th of May 2019]
+- update WP Core to 5.2
+- update Timber to 1.9.4
+- update phpdotenv to 3.3.3
+
 1.6.1 [25th of March 2019]
 - update WP Core to 5.1.1
 - update Timber to 1.9.2
