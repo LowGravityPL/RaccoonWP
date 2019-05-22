@@ -1,3 +1,7 @@
+1.6.3 [22nd of May 2019]
+- update NPM dependencies
+- fix wp-cli path
+
 1.6.2 [15th of May 2019]
 - update WP Core to 5.2
 - update Timber to 1.9.4
