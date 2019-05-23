@@ -5,7 +5,7 @@ namespace RaccoonSite;
 
 add_action('login_enqueue_scripts', __NAMESPACE__ . '\\inject_login_logo_css');
 add_filter('login_headerurl', __NAMESPACE__ . '\\adjust_login_logo_url');
-add_filter('login_headertitle', __NAMESPACE__ . '\\setup_login_logo_title');
+add_filter('login_headertext', __NAMESPACE__ . '\\setup_login_logo_title');
 
 function inject_login_logo_css()
 { ?>
