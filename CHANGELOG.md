@@ -1,3 +1,7 @@
+1.6.4 [23rd of May 2019]
+- update WP Core to 5.2.1
+- replace login_headertitle with login_headertext to fix deprecation warning
+
 1.6.3 [22nd of May 2019]
 - update NPM dependencies
 - fix wp-cli path
