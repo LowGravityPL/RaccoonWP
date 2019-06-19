@@ -1,3 +1,9 @@
+1.6.5 [19th of June 2019]
+- update WP Core to 5.2.2
+- update Timber to 1.10.0
+- update phpdotenv to 3.4.0
+- update Extended CPTs to 4.2.4
+
 1.6.4 [23rd of May 2019]
 - update WP Core to 5.2.1
 - replace login_headertitle with login_headertext to fix deprecation warning
