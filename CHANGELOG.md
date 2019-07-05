@@ -1,3 +1,6 @@
+1.6.6 [5th of July 2019]
+- update Extended CPTs to 4.2.5
+
 1.6.5 [19th of June 2019]
 - update WP Core to 5.2.2
 - update Timber to 1.10.0
