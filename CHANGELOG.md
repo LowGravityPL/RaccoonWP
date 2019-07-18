@@ -1,3 +1,6 @@
+1.6.7 [18th of July 2019]
+- update NPM dependencies including few major versions (broken backwards compatibility)
+
 1.6.6 [5th of July 2019]
 - update Extended CPTs to 4.2.5
 

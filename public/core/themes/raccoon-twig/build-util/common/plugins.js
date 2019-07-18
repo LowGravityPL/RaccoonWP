@@ -1,4 +1,4 @@
-const Clean          = require('clean-webpack-plugin');
+const { CleanWebpackPlugin }          = require('clean-webpack-plugin');
 const Copy           = require('copy-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
 
@@ -8,7 +8,7 @@ const commonPaths = require('./paths');
 
 module.exports = {
     plugins: [
-        new Clean({
+        new CleanWebpackPlugin({
                 dry:     false,
                 verbose: true,
             }),
