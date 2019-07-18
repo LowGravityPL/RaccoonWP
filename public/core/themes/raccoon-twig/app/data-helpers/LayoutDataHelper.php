@@ -20,7 +20,7 @@ class LayoutDataHelper extends DefaultDataHelper
     public static function getDefaultHeaderData()
     {
         //default RaccoonWP logo
-        $logo_url = get_asset_path('assets/images/raccoon-logo_scaled.png');
+        $logo_url = get_asset_path('images/raccoon-logo_scaled.png');
 
         //todo: extract to a helper [Lucas]
         $custom_logo_id = get_theme_mod('custom_logo');
