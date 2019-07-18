@@ -15,6 +15,9 @@
     "directories": {
         "lib": "lib"
     },
+    "browserslist": [
+        "defaults"
+    ],
     "scripts": {
         "webpack": "webpack --config build-util/webpack.config.js",
         "build": "npm run webpack -- --env.mode development",
