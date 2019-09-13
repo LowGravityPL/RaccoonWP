@@ -49,6 +49,12 @@ module.exports = isWatching => {
     };
 
     const externalAssetsRules = {
+        test: /\.vue$/,
+        exclude: /node_modules/,
+        loader: 'vue-loader'
+    };
+
+    const vueRules = {
         test:    /\.(eot|woff2|woff|ttf|svg|gif|png|jpe?g|ico)$/,
         include: /node_modules/,
         use:     {
