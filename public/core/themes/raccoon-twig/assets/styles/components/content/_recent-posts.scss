@@ -1,0 +1,4 @@
+.recent-posts-wrapper {
+    @extend %generic-component;
+    @include container();
+}
