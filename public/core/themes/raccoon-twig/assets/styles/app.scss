@@ -4,7 +4,7 @@
 @import 'general/variables';
 @import 'general/placeholders';
 @import 'general/mixins';
-//run normalize-scss to normalize css across the browserss
+//run normalize-scss to normalize css across the browsers
 //@see: https://necolas.github.io/normalize.css/
 @import '~normalize-scss/sass/normalize';
 
@@ -26,5 +26,3 @@
 @import 'components/content/post-archive';
 @import 'components/content/post-card';
 @import 'components/content/post-single';
-@import 'components/content/recent-posts';
-

@@ -1,9 +1,9 @@
 <template>
     <div class="recent-posts-wrapper">
         <div class="recent-posts-component">
-            <div class="error" v-if="errored">Sorry, we weren't able to fetch recent posts.</div>
+            <div class="error" v-if="hasError">Sorry, we weren't able to fetch recent posts.</div>
             <template v-else>
-                <div class="loading" v-if="loading">Loading...</div>
+                <div class="loading" v-if="isLoading">Loading...</div>
                 <template v-else>
                     <h2>Recent posts:</h2>
                     <div class="recent-posts-list">
@@ -56,6 +56,10 @@
                             </div>
                         </div>
                     </div>
+                    <button
+                        v-if="hasMorePosts"
+                        v-on:click="loadOlderPosts"
+                    >Load older posts</button>
                 </template>
             </template>
         </div>
@@ -64,51 +68,79 @@
 
 <script>
     import axios from 'axios';
-    import $ from 'jquery';
 
     const wpPostsEndpoint = `${window.location.protocol}//${window.location.host}/wp-json/wp/v2/posts`;
-    const postsCount      = 3;
-    const $excludedPostID = $('article').data('excluded-id');
-    const requestURL      = `${wpPostsEndpoint}?_embed&per_page=${postsCount}&exclude=${$excludedPostID}`;
+    const requestURL      = `${wpPostsEndpoint}?_embed`;
 
     export default {
         name: 'RecentPosts',
         data() {
             return {
                 posts:   [],
-                errored: false,
-                loading: true,
+                hasError: false,
+                isLoading: true,
+                hasMorePosts: true,
+                currentPage: 1,
+            }
+        },
+        props: {
+            excludedPostId: Number,
+            postsPerPage: {
+                type: Number,
+                default: 3
+            }
+        },
+        methods: {
+            loadOlderPosts() {
+                this.currentPage += 1;
+                this.getPostsFromPage();
+            },
+            getPostsFromPage() {
+                let requestURLCurrent = `${requestURL}&per_page=${this.postsPerPage}&exclude=${this.excludedPostId}&page=${this.currentPage}`;
+                axios
+                    .get(requestURLCurrent)
+                    .then(response => {
+                        this.posts   = response.data;
+                        if (this.currentPage * this.postsPerPage >= response.headers['x-wp-total']) {
+                            this.hasMorePosts = false;
+                        }
+                        this.isLoading = false;
+                    })
+                    .catch(error => {
+                        console.error(error);
+                        this.hasError = true;
+                        this.isLoading = false;
+                    })
             }
         },
         mounted() {
-            axios
-                .get(requestURL)
-                .then(response => {
-                    this.posts   = response.data;
-                    this.loading = false;
-                })
-                .catch(error => {
-                    console.error(error);
-                    this.errored = true;
-                    this.loading = false;
-                })
+            this.getPostsFromPage();
         }
     }
 </script>
 
 <style lang="scss">
-    .recent-posts-component > h2 {
-        text-transform: uppercase;
-    }
+    @import "../../../styles/general/variables";
+    @import "../../../styles/general/mixins";
+    @import "../../../styles/general/placeholders";
 
-    .recent-posts-list {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        list-style: none;
+    .recent-posts-wrapper {
+        @include container();
+        @extend %generic-component;
 
-        @media(max-width: 783px) {
-            flex-direction: column;
+        .recent-posts-component > h2 {
+            text-transform: uppercase;
+        }
+
+        .recent-posts-list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            list-style: none;
+
+            @media(max-width: $screen-md-min) {
+                flex-direction: column;
+            }
         }
     }
 </style>
