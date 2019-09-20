@@ -46,9 +46,7 @@
                                 ></section>
                                 <footer
                                     v-if="post._embedded.author[0]"
-                                >
-                                    Written by
-                                    <a
+                                >Written by <a
                                         v-bind:href="post._embedded.author[0].link"
                                         v-html="post._embedded.author[0].name"
                                     ></a>
