@@ -15,11 +15,11 @@
                             <a
                                 class="post-thumbnail"
                                 v-bind:href="post.link"
-                                v-if="post._embedded['wp:featuredmedia']"
+                                v-if="getFeaturedMediaSourceUrl(post)"
                             >
                                 <div
                                     class="post-thumbnail-image"
-                                    v-bind:style="`background-image: url(${ post._embedded['wp:featuredmedia'][0].media_details.sizes.medium.source_url }})`"
+                                    v-bind:style="`background-image: url(${ getFeaturedMediaSourceUrl(post) })`"
                                 ></div>
                             </a>
                             <div
@@ -109,6 +109,28 @@
                         this.hasError = true;
                         this.isLoading = false;
                     })
+            },
+            getFeaturedMediaSourceUrl(post) {
+                if (
+                       post
+                    && post._embedded
+                    && post._embedded['wp:featuredmedia']
+                    && post._embedded['wp:featuredmedia'][0]
+                    && post._embedded['wp:featuredmedia'][0].media_details
+                    && post._embedded['wp:featuredmedia'][0].media_details.sizes
+                ) {
+                    const sizes = post._embedded['wp:featuredmedia'][0].media_details.sizes;
+
+                    if (sizes.medium && sizes.medium.source_url) {
+                        return sizes.medium.source_url;
+                    } else if (sizes.full && sizes.full.source_url){
+                        return sizes.full.source_url;
+                    } else {
+                        return null;
+                    }
+                } else {
+                    return null;
+                }
             }
         },
         mounted() {
