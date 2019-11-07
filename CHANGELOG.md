@@ -1,4 +1,4 @@
-1.7.0 [18th of July 2019]
+1.8.0 [7th of November 2019]
 - Add Vue.js example recent posts component
 
 1.7.0 [18th of July 2019]
