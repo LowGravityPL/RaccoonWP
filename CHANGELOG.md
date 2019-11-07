@@ -1,3 +1,10 @@
+1.9.0 [7th of November 2019]
+- update WP Core to 5.2.4
+- update Timber to 1.12
+- update Node dependencies to most recent versions
+- bump up theme version to 1.2.0
+- various other minor dependency updates 
+
 1.8.0 [7th of November 2019]
 - Add Vue.js example recent posts component
 
