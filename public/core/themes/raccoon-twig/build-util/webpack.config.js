@@ -28,6 +28,11 @@ module.exports = ({mode, presets, isWatching} = {mode: "production", presets: []
         externals: {
             jquery: 'jQuery',
         },
+        resolve: {
+            alias: {
+                'vue$': 'vue/dist/vue.esm.js' // 'vue/dist/vue.common.js' for webpack 1
+            }
+        }
     };
 
     return webpackMerge(

@@ -13,4 +13,7 @@
             {% include 'content/not-found.twig' %}
         {% endif %}
     </section>
+    {% block related_posts %}
+        {% include 'components/recent-posts.twig' with post only %}
+    {% endblock %}
 {% endblock %}
