@@ -1,3 +1,6 @@
+1.9.1 [8th of November 2019]
+- make the example Vue implementation more robust by ensuring the data from API exists.
+
 1.9.0 [7th of November 2019]
 - update WP Core to 5.2.4
 - update Timber to 1.12
