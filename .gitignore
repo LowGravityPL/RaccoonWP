@@ -3,6 +3,7 @@
 
 #IDE
 /.idea
+/.vscode
 
 #Vagrant
 /.vagrant
@@ -24,8 +25,9 @@
 #exclude your non-composer/premium plugins here like
 #!public/core/plugins/your-plugin-here
 
-#RaccoonWP MU plugin
-
+#RaccoonWP MU plugins
+/public/core/mu-plugins/mu-require.php
+/public/core/mu-plugins/raccoon-framework/
 
 #RaccoonWP theme
 /public/core/themes/raccoon-twig/node_modules/

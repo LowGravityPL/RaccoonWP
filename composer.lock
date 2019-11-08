@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2ad53a9607c5fd2653c60889e7bc9c3e",
+    "content-hash": "7406298201e3520890dd0bfc1cea9c60",
     "packages": [
         {
             "name": "composer/installers",
@@ -313,29 +313,123 @@
             "time": "2018-11-09T20:10:38+00:00"
         },
         {
-            "name": "phpoption/phpoption",
-            "version": "1.5.1",
+            "name": "lkwdwrd/wp-muplugin-loader",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
-                "url": "https://github.com/schmittjoh/php-option.git",
-                "reference": "894e8f93890b79f29911cce497fe811fe9d931ba"
+                "url": "https://github.com/lkwdwrd/wp-muplugin-loader.git",
+                "reference": "aed228e0037fc243c116a0d2d69076db5ed7d96b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/894e8f93890b79f29911cce497fe811fe9d931ba",
-                "reference": "894e8f93890b79f29911cce497fe811fe9d931ba",
+                "url": "https://api.github.com/repos/lkwdwrd/wp-muplugin-loader/zipball/aed228e0037fc243c116a0d2d69076db5ed7d96b",
+                "reference": "aed228e0037fc243c116a0d2d69076db5ed7d96b",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
+            },
+            "require-dev": {
+                "10up/wp_mock": "dev-dev",
+                "codeclimate/php-test-reporter": "^0.4.4",
+                "phpunit/phpunit": "^7.1.4"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "LkWdwrd\\Composer\\MULoaderPlugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "LkWdwrd\\Composer\\": "src/lkwdwrd/Composer"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Luke Woodward",
+                    "email": "woodward.lucas@gmail.com"
+                }
+            ],
+            "description": "A drop-in MU Plugin loader for WordPress",
+            "keywords": [
+                "loader",
+                "muplugin",
+                "wordpress"
+            ],
+            "time": "2018-04-20T22:09:51+00:00"
+        },
+        {
+            "name": "lowgravitypl/raccoon-framework",
+            "version": "0.1",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:lowgravitypl/raccoon-framework.git",
+                "reference": "ac4fafec931a1ea7bf3661079bbf3d833b39c74d"
+            },
+            "require": {
+                "lkwdwrd/wp-muplugin-loader": "^1.0.0",
+                "php": "^7.2"
+            },
+            "type": "wordpress-muplugin",
+            "scripts": {
+                "post-root-package-install": [
+                    "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+                ],
+                "make-pot": [
+                    "bash RaccoonWP/utils/generate-translations.sh"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kamil Grzegorczyk",
+                    "email": "kamilgrzegorczyk@gmail.com",
+                    "homepage": "https://kamilgrzegorczyk.com"
+                },
+                {
+                    "name": "Lucas Grzegorczyk",
+                    "email": "lucasgrzegorczyk@gmail.com"
+                }
+            ],
+            "description": "RaccoonWP is an opinionated WordPress architecture stack and starter theme",
+            "keywords": [
+                "boilerplate",
+                "composer",
+                "raccoon",
+                "stack",
+                "wordpress"
+            ],
+            "time": "2019-11-06T14:00:42+00:00"
+        },
+        {
+            "name": "phpoption/phpoption",
+            "version": "1.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmittjoh/php-option.git",
+                "reference": "2ba2586380f8d2b44ad1b9feb61c371020b27793"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/2ba2586380f8d2b44ad1b9feb61c371020b27793",
+                "reference": "2ba2586380f8d2b44ad1b9feb61c371020b27793",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "4.7.*"
+                "phpunit/phpunit": "^4.7|^5.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.3-dev"
+                    "dev-master": "1.5-dev"
                 }
             },
             "autoload": {
@@ -360,7 +454,7 @@
                 "php",
                 "type"
             ],
-            "time": "2019-11-06T12:42:47+00:00"
+            "time": "2019-11-06T22:27:00+00:00"
         },
         {
             "name": "roots/wp-password-bcrypt",
