@@ -28,8 +28,8 @@
                                 <header>
                                     <div
                                         class="post-category"
-                                        v-if="post._embedded['wp:term'][0][0]"
-                                        v-html="post._embedded['wp:term'][0][0].name"
+                                        v-if="getTerm(post)"
+                                        v-html="getTerm(post)"
                                     ></div>
                                     <a
                                         v-bind:href="post.link"
@@ -45,10 +45,10 @@
                                     v-html="post.excerpt.rendered"
                                 ></section>
                                 <footer
-                                    v-if="post._embedded.author[0]"
+                                    v-if="getAuthor(post)"
                                 >Written by <a
-                                        v-bind:href="post._embedded.author[0].link"
-                                        v-html="post._embedded.author[0].name"
+                                        v-bind:href="getAuthor(post).link"
+                                        v-html="getAuthor(post).name"
                                     ></a>
                                 </footer>
                             </div>
@@ -125,9 +125,33 @@
                         return sizes.medium.source_url;
                     } else if (sizes.full && sizes.full.source_url){
                         return sizes.full.source_url;
-                    } else {
-                        return null;
                     }
+                }
+
+                return null;
+            },
+            getTerm(post) {
+                if (
+                       post
+                    && post._embedded
+                    && post._embedded['wp:term']
+                    && post._embedded['wp:term'][0]
+                    && post._embedded['wp:term'][0][0]
+                    && post._embedded['wp:term'][0][0].name
+                ) {
+                    return post._embedded['wp:term'][0][0].name;
+                } else {
+                    return null;
+                }
+            },
+            getAuthor(post) {
+                if (
+                       post
+                    && post._embedded
+                    && post._embedded.author
+                    && post._embedded.author[0]
+                ) {
+                    return post._embedded.author[0];
                 } else {
                     return null;
                 }
