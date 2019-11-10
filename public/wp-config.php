@@ -8,7 +8,8 @@
 require_once(dirname(__DIR__) . '/vendor/autoload.php');
 
 // Initializing new instance of RaccoonApp which does all of WP configuration init in similar way wp-config did
-$app = new \RaccoonWP\RaccoonApp();
+$root_directory = dirname(__FILE__, 2);
+$app = new \RaccoonWP\RaccoonApp($root_directory);
 $app->initialize();
 
 //Set up MySQL table prefix for that installation
