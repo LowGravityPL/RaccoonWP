@@ -27,6 +27,11 @@
         {
             "name": "Lucas Grzegorczyk",
             "email": "lucasgrzegorczyk@gmail.com"
+        },
+        {
+            "name": "Matthew Grzegorczyk",
+            "email": "matthewgrzegorczyk@gmail.com",
+            "homepage": "https://matthew.grzegorczyk.me"
         }
     ],
     "config": {
@@ -63,9 +68,11 @@
         "composer/installers": "^1.6",
         "johnbillion/extended-cpts": "4.2.5",
         "johnpbloch/wordpress": "^5.2",
+        "lowgravitypl/raccoonwp-core": "dev-master",
+        "lowgravitypl/raccoonwp-mu-framework": "dev-master",
         "roots/wp-password-bcrypt": "^1.0",
         "vlucas/phpdotenv": "3.4.0",
         "wpackagist-plugin/timber-library": "^1.12",
-        "lowgravitypl/raccoon-framework": "^0.1"
+        "lkwdwrd/wp-muplugin-loader": "^1.0.0"
     }
 }

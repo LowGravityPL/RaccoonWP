@@ -17,6 +17,7 @@
 /public/wp
 /public/core/debug.log
 /public/core/uploads/
+/public/core/languages/
 
 #Plugins
 /public/core/plugins/*
@@ -27,7 +28,7 @@
 
 #RaccoonWP MU plugins
 /public/core/mu-plugins/mu-require.php
-/public/core/mu-plugins/raccoon-framework/
+/public/core/mu-plugins/raccoonwp-mu-framework/
 
 #RaccoonWP theme
 /public/core/themes/raccoon-twig/node_modules/

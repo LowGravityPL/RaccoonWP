@@ -26,7 +26,7 @@ function display_no_timber_admin_notice()
     <div class="error">
         <p>
             Raccoon theme relies on Timber plugin to process Twig templates. Please activate it.
-            <a href="' . esc_url(admin_url('plugins.php')) . '">
+            <a href="<?= esc_url(admin_url('plugins.php')) ?>">
                 <?= esc_url(admin_url('plugins.php')) ?>
             </a>
         </p>

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7406298201e3520890dd0bfc1cea9c60",
+    "content-hash": "92ef90d564d11540c84658f35db6b908",
     "packages": [
         {
             "name": "composer/installers",
@@ -362,26 +362,29 @@
             "time": "2018-04-20T22:09:51+00:00"
         },
         {
-            "name": "lowgravitypl/raccoon-framework",
-            "version": "0.1",
+            "name": "lowgravitypl/raccoonwp-core",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git@bitbucket.org:lowgravitypl/raccoon-framework.git",
-                "reference": "ac4fafec931a1ea7bf3661079bbf3d833b39c74d"
+                "url": "https://github.com/LowGravityPL/RaccoonWP-Core.git",
+                "reference": "21bef85f8a1f2f312d596f3674a38b349860b8d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LowGravityPL/RaccoonWP-Core/zipball/21bef85f8a1f2f312d596f3674a38b349860b8d3",
+                "reference": "21bef85f8a1f2f312d596f3674a38b349860b8d3",
+                "shasum": ""
             },
             "require": {
-                "lkwdwrd/wp-muplugin-loader": "^1.0.0",
-                "php": "^7.2"
+                "php": "^7.1.3"
             },
-            "type": "wordpress-muplugin",
-            "scripts": {
-                "post-root-package-install": [
-                    "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
-                ],
-                "make-pot": [
-                    "bash RaccoonWP/utils/generate-translations.sh"
-                ]
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "RaccoonWP\\": "src/"
+                }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -394,6 +397,11 @@
                 {
                     "name": "Lucas Grzegorczyk",
                     "email": "lucasgrzegorczyk@gmail.com"
+                },
+                {
+                    "name": "Matthew Grzegorczyk",
+                    "email": "matthewgrzegorczyk@gmail.com",
+                    "homepage": "https://matthew.grzegorczyk.me"
                 }
             ],
             "description": "RaccoonWP is an opinionated WordPress architecture stack and starter theme",
@@ -404,7 +412,55 @@
                 "stack",
                 "wordpress"
             ],
-            "time": "2019-11-06T14:00:42+00:00"
+            "time": "2019-11-12T10:13:23+00:00"
+        },
+        {
+            "name": "lowgravitypl/raccoonwp-mu-framework",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LowGravityPL/RaccoonWP-MU-Framework.git",
+                "reference": "5d1f2630b0514abb9d03dcf52a78e4102d49f4a4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LowGravityPL/RaccoonWP-MU-Framework/zipball/5d1f2630b0514abb9d03dcf52a78e4102d49f4a4",
+                "reference": "5d1f2630b0514abb9d03dcf52a78e4102d49f4a4",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2"
+            },
+            "type": "wordpress-muplugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kamil Grzegorczyk",
+                    "email": "kamilgrzegorczyk@gmail.com",
+                    "homepage": "https://kamilgrzegorczyk.com"
+                },
+                {
+                    "name": "Lucas Grzegorczyk",
+                    "email": "lucasgrzegorczyk@gmail.com"
+                },
+                {
+                    "name": "Matthew Grzegorczyk",
+                    "email": "matthewgrzegorczyk@gmail.com",
+                    "homepage": "https://matthew.grzegorczyk.me"
+                }
+            ],
+            "description": "RaccoonWP is an opinionated WordPress architecture stack and starter theme",
+            "keywords": [
+                "boilerplate",
+                "composer",
+                "raccoon",
+                "stack",
+                "wordpress"
+            ],
+            "time": "2019-11-12T10:42:55+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -645,7 +701,10 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "lowgravitypl/raccoonwp-core": 20,
+        "lowgravitypl/raccoonwp-mu-framework": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
