@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "92ef90d564d11540c84658f35db6b908",
+    "content-hash": "ceb6fabc3e5e8ee57df1dd688b95b643",
     "packages": [
         {
             "name": "composer/installers",
@@ -363,7 +363,7 @@
         },
         {
             "name": "lowgravitypl/raccoonwp-core",
-            "version": "dev-master",
+            "version": "2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LowGravityPL/RaccoonWP-Core.git",
@@ -416,7 +416,7 @@
         },
         {
             "name": "lowgravitypl/raccoonwp-mu-framework",
-            "version": "dev-master",
+            "version": "2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LowGravityPL/RaccoonWP-MU-Framework.git",
@@ -701,10 +701,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "lowgravitypl/raccoonwp-core": 20,
-        "lowgravitypl/raccoonwp-mu-framework": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
