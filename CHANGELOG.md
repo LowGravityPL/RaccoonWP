@@ -1,3 +1,7 @@
+2.0 [8th of November 2019]
+- initial release of new 2.0 version with more modular design in mind
+- RaccoonWP Core and MU plugin framework became separate dependencies 
+
 1.9.1 [8th of November 2019]
 - make the example Vue implementation more robust by ensuring the data from API exists.
 
