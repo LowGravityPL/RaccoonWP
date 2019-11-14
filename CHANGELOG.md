@@ -1,4 +1,9 @@
-2.0 [8th of November 2019]
+2.1 [14th of November 2019]
+- update WP Core to 5.3
+- fix DefaultHelper issue in the site-framework when wordpress is installing
+- change minimum required PHP version to 7.2
+
+2.0 [13th of November 2019]
 - initial release of new 2.0 version with more modular design in mind
 - RaccoonWP Core and MU plugin framework became separate dependencies 
 
