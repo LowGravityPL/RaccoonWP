@@ -8,7 +8,10 @@ require_once(__DIR__ . '/setup/login-logo.php');
 require_once(__DIR__ . '/setup/acf-json.php');
 
 //Data helpers
-require_once(__DIR__ . '/DataHelpers/DefaultPostHelper.php');
+// Check if DefaultDataHelper exists to prevent errors when RaccoonMUFramework is not loaded.
+if (class_exists('RaccoonMUFramework\DefaultDataHelper')) {
+    require_once(__DIR__ . '/DataHelpers/DefaultPostHelper.php');
+}
 
 //load CPTs and tax here
 require_once(__DIR__ . '/entities/cpt/sample-cpt.php');
