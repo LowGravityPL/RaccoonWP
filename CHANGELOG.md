@@ -1,3 +1,10 @@
+2.2 [13th of February 2020]
+- update WP Core to 5.3.2
+- update Raccoon Core libraries to 2.1
+- allow for customization of webroot (public) directory
+- update composer dependencies to newest versions
+- update theme npm dependencies to newest versions
+
 2.1 [14th of November 2019]
 - update WP Core to 5.3
 - fix DefaultHelper issue in the site-framework when wordpress is installing
@@ -5,7 +12,7 @@
 
 2.0 [13th of November 2019]
 - initial release of new 2.0 version with more modular design in mind
-- RaccoonWP Core and MU plugin framework became separate dependencies 
+- RaccoonWP Core and MU plugin framework became separate dependencies
 
 1.9.1 [8th of November 2019]
 - make the example Vue implementation more robust by ensuring the data from API exists.
@@ -15,7 +22,7 @@
 - update Timber to 1.12
 - update Node dependencies to most recent versions
 - bump up theme version to 1.2.0
-- various other minor dependency updates 
+- various other minor dependency updates
 
 1.8.0 [7th of November 2019]
 - Add Vue.js example recent posts component
