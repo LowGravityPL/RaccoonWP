@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b7e723fa1b8fa99d93966c838d978dac",
+    "content-hash": "4cad9c7d1513470973afc47ee063722b",
     "packages": [
         {
             "name": "composer/installers",
@@ -365,16 +365,16 @@
         },
         {
             "name": "lowgravitypl/raccoonwp-core",
-            "version": "2.0",
+            "version": "2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LowGravityPL/RaccoonWP-Core.git",
-                "reference": "21bef85f8a1f2f312d596f3674a38b349860b8d3"
+                "reference": "94aabdfa27af2a8b8336d42dd2eb90143f06a708"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LowGravityPL/RaccoonWP-Core/zipball/21bef85f8a1f2f312d596f3674a38b349860b8d3",
-                "reference": "21bef85f8a1f2f312d596f3674a38b349860b8d3",
+                "url": "https://api.github.com/repos/LowGravityPL/RaccoonWP-Core/zipball/94aabdfa27af2a8b8336d42dd2eb90143f06a708",
+                "reference": "94aabdfa27af2a8b8336d42dd2eb90143f06a708",
                 "shasum": ""
             },
             "require": {
@@ -414,20 +414,20 @@
                 "stack",
                 "wordpress"
             ],
-            "time": "2019-11-12T10:13:23+00:00"
+            "time": "2020-02-13T11:39:10+00:00"
         },
         {
             "name": "lowgravitypl/raccoonwp-mu-framework",
-            "version": "2.0",
+            "version": "2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LowGravityPL/RaccoonWP-MU-Framework.git",
-                "reference": "5d1f2630b0514abb9d03dcf52a78e4102d49f4a4"
+                "reference": "2da595ff7d0b85bf722053fc405a2bd50f3d1f6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LowGravityPL/RaccoonWP-MU-Framework/zipball/5d1f2630b0514abb9d03dcf52a78e4102d49f4a4",
-                "reference": "5d1f2630b0514abb9d03dcf52a78e4102d49f4a4",
+                "url": "https://api.github.com/repos/LowGravityPL/RaccoonWP-MU-Framework/zipball/2da595ff7d0b85bf722053fc405a2bd50f3d1f6f",
+                "reference": "2da595ff7d0b85bf722053fc405a2bd50f3d1f6f",
                 "shasum": ""
             },
             "require": {
@@ -462,7 +462,7 @@
                 "stack",
                 "wordpress"
             ],
-            "time": "2019-11-12T10:42:55+00:00"
+            "time": "2020-02-13T11:22:42+00:00"
         },
         {
             "name": "phpoption/phpoption",
