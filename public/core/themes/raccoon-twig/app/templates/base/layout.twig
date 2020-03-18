@@ -6,7 +6,7 @@
 {% block head %}
     {% include 'blocks/head.twig' %}
 {% endblock %}
-<body>
+<body class="{{ body_class }}">
 {% block header %}
     {% include 'layout/header-default.twig' with header_data only %}
 {% endblock %}
