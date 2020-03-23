@@ -6,10 +6,12 @@ module.exports = isWatching => {
     const jsRules = {
         test:    /\.js$/,
         exclude: /node_modules/,
-        loader:  'babel-loader',
-        options: {
-            babelrc: true,
-        }
+        use: [{
+            loader: 'babel-loader',
+            options: {
+                presets: ['@babel/preset-env'],
+            },
+        }],
     };
 
     const scssRules = {
