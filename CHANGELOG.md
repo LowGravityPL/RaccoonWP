@@ -1,3 +1,9 @@
+2.2.1 [23rd of March 2020]
+- add babel-preset-env configuration to build process
+- add body classes to <body> tag in theme
+- Update composer dependencies (mainly the minor Timber version)
+- Update theme npm dependencies to newest version
+
 2.2 [13th of February 2020]
 - update WP Core to 5.3.2
 - update Raccoon Core libraries to 2.1
