@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4cad9c7d1513470973afc47ee063722b",
+    "content-hash": "ef6c38983e10de5e76ba198ce980d639",
     "packages": [
         {
             "name": "composer/installers",
@@ -132,16 +132,16 @@
         },
         {
             "name": "johnbillion/extended-cpts",
-            "version": "4.2.5",
+            "version": "4.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnbillion/extended-cpts.git",
-                "reference": "3f582bbb19bec814360bd8b0ee8f52c95183d96a"
+                "reference": "6446170b222869e1e0770c130ead47def5261b51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnbillion/extended-cpts/zipball/3f582bbb19bec814360bd8b0ee8f52c95183d96a",
-                "reference": "3f582bbb19bec814360bd8b0ee8f52c95183d96a",
+                "url": "https://api.github.com/repos/johnbillion/extended-cpts/zipball/6446170b222869e1e0770c130ead47def5261b51",
+                "reference": "6446170b222869e1e0770c130ead47def5261b51",
                 "shasum": ""
             },
             "require": {
@@ -150,8 +150,8 @@
             "require-dev": {
                 "automattic/phpcs-neutron-standard": "^1.5",
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.5",
+                "johnbillion/falsey-assertequals-detector": "^2",
                 "johnbillion/php-docs-standards": "^1",
-                "johnkary/phpunit-speedtrap": "^2",
                 "phpcompatibility/phpcompatibility-wp": "^2",
                 "phpunit/phpunit": "^6",
                 "roots/wordpress": "*",
@@ -161,6 +161,7 @@
                 "wp-phpunit/wp-phpunit": "*"
             },
             "suggest": {
+                "seravo/wp-custom-bulk-actions": "Custom Bulk Actions",
                 "wpackagist-plugin/rewrite-testing": "Rewrite Rule Testing"
             },
             "type": "library",
@@ -168,6 +169,9 @@
                 "wordpress-install-dir": "tests/wordpress"
             },
             "autoload": {
+                "psr-4": {
+                    "ExtCPTs\\Tests\\": "tests/phpunit"
+                },
                 "files": [
                     "extended-cpts.php"
                 ]
@@ -184,7 +188,7 @@
             ],
             "description": "A library which provides extended functionality to WordPress custom post types and taxonomies.",
             "homepage": "https://github.com/johnbillion/extended-cpts/",
-            "time": "2019-06-27T21:06:36+00:00"
+            "time": "2019-08-25T21:14:07+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
@@ -365,20 +369,21 @@
         },
         {
             "name": "lowgravitypl/raccoonwp-core",
-            "version": "2.1.1",
+            "version": "2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LowGravityPL/RaccoonWP-Core.git",
-                "reference": "8cc0ace1e0f044efc777ca22ca8a824edd661c87"
+                "reference": "933c4570a4da257a555893f29cbabf3e91150ce8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LowGravityPL/RaccoonWP-Core/zipball/8cc0ace1e0f044efc777ca22ca8a824edd661c87",
-                "reference": "8cc0ace1e0f044efc777ca22ca8a824edd661c87",
+                "url": "https://api.github.com/repos/LowGravityPL/RaccoonWP-Core/zipball/933c4570a4da257a555893f29cbabf3e91150ce8",
+                "reference": "933c4570a4da257a555893f29cbabf3e91150ce8",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1.3"
+                "php": "^7.2",
+                "vlucas/phpdotenv": "^4.1"
             },
             "type": "library",
             "autoload": {
@@ -414,7 +419,7 @@
                 "stack",
                 "wordpress"
             ],
-            "time": "2020-02-26T15:55:07+00:00"
+            "time": "2020-03-24T08:22:47+00:00"
         },
         {
             "name": "lowgravitypl/raccoonwp-mu-framework",
@@ -636,30 +641,35 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v3.4.0",
+            "version": "v4.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "5084b23845c24dbff8ac6c204290c341e4776c92"
+                "reference": "939dfda2d7267ac8fc53ac3d642b5de357554c39"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/5084b23845c24dbff8ac6c204290c341e4776c92",
-                "reference": "5084b23845c24dbff8ac6c204290c341e4776c92",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/939dfda2d7267ac8fc53ac3d642b5de357554c39",
+                "reference": "939dfda2d7267ac8fc53ac3d642b5de357554c39",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.4 || ^7.0",
-                "phpoption/phpoption": "^1.5",
+                "php": "^5.5.9 || ^7.0",
+                "phpoption/phpoption": "^1.7.2",
                 "symfony/polyfill-ctype": "^1.9"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8.35 || ^5.0 || ^6.0"
+                "bamarni/composer-bin-plugin": "^1.3",
+                "ext-filter": "*",
+                "phpunit/phpunit": "^4.8.35 || ^5.0 || ^6.0 || ^7.0"
+            },
+            "suggest": {
+                "ext-filter": "Required to use the boolean validator."
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.4-dev"
+                    "dev-master": "4.1-dev"
                 }
             },
             "autoload": {
@@ -673,9 +683,14 @@
             ],
             "authors": [
                 {
+                    "name": "Graham Campbell",
+                    "email": "graham@alt-three.com",
+                    "homepage": "https://gjcampbell.co.uk/"
+                },
+                {
                     "name": "Vance Lucas",
                     "email": "vance@vancelucas.com",
-                    "homepage": "http://www.vancelucas.com"
+                    "homepage": "https://vancelucas.com/"
                 }
             ],
             "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
@@ -684,7 +699,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2019-06-15T22:40:20+00:00"
+            "time": "2020-03-12T13:44:15+00:00"
         },
         {
             "name": "wpackagist-plugin/timber-library",

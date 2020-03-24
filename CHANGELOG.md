@@ -1,3 +1,7 @@
+2.3 [24th of March 2020]
+- Move vlucas/phpdotenv to the RaccoonWP-Core package
+- update extended CPTs package
+
 2.2.1 [23rd of March 2020]
 - add babel-preset-env configuration to build process
 - add body classes to <body> tag in theme
