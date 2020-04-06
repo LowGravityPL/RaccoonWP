@@ -1,3 +1,6 @@
+2.3.1 [24th of March 2020]
+- Wrap acf-json require in if class exists check
+
 2.3 [24th of March 2020]
 - Move vlucas/phpdotenv to the RaccoonWP-Core package
 - update extended CPTs package

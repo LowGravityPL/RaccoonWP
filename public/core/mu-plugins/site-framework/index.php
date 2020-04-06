@@ -5,7 +5,10 @@ namespace RaccoonSite;
 
 //Basic set up
 require_once(__DIR__ . '/setup/login-logo.php');
-require_once(__DIR__ . '/setup/acf-json.php');
+
+if (class_exists('RaccoonMUFramework\AcfJsonHelper')) {
+    require_once(__DIR__ . '/setup/acf-json.php');
+}
 
 //Data helpers
 // Check if DefaultDataHelper exists to prevent errors when RaccoonMUFramework is not loaded.
