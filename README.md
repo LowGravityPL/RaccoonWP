@@ -1,11 +1,11 @@
 ![RaccoonWP logo](https://lowgravity.pl/raccoon-head-scaled-small.png)
 # RaccoonWP
-**This is 2.2.1 release. If you find any issues let us know**
+**This is 2.3.1 release. If you find any issues let us know**
 
 Raccoon is a modern architecture stack and a starter theme for [WordPress](https://wordpress.org/).
 
 The stack is based on Composer on the backend. NodeJs with Webpack are used on the frontend.
-This composition allows for quick and efficient development using the tools which are **state of the art in 2019.**
+This composition allows for quick and efficient development using the tools which are **state of the art in 2020.**
 
 You should use it as your boilerplate/starter kit to obtain **optimal architecture with performance, extensibility and security** in mind.
 
@@ -15,7 +15,7 @@ Raccoon is best suited for fresh projects (but there is no problem in implementi
 Please find [the documentation on our github page](https://raccoonwp.lowgravity.pl)
 
 ### Status
-![Version](https://img.shields.io/badge/Version-2.2.1-green.svg)
+![Version](https://img.shields.io/badge/Version-2.3.1-green.svg)
 ![PHP from Packagist](https://img.shields.io/packagist/php-v/lowgravitypl/raccoonwp.svg)
 [![License](https://poser.pugx.org/lowgravitypl/raccoonwp/license)](https://packagist.org/packages/lowgravitypl/raccoonwp)
 
@@ -58,4 +58,5 @@ Packagist:
 ### Contributors
 - [Kamil Grzegorczyk](https://kamilgrzegorczyk.com)
 - [Lucas Grzegorczyk](https://github.com/furai)
+- [Matthew Grzegorczyk](https://github.com/matthewgrzegorczyk)
 - artwork by [Izabela Grzegorczyk](https://www.behance.net/IzaGrzegorczyk)
