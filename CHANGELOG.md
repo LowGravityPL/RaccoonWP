@@ -3,7 +3,7 @@
 
 2.3.1 [1st of May 2020]
 - update composer dependencies, bump up WP Core to 5.4.x
-- update raccoon-twig npm dependencies to newest vesions
+- update raccoon-twig npm dependencies to newest versions
 - Wrap acf-json require in if class exists check
 
 2.3 [24th of March 2020]
