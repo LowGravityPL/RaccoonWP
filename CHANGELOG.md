@@ -1,3 +1,6 @@
+2.3.2 [31st of May 2020]
+- remove default body styles
+
 2.3.1 [1st of May 2020]
 - update composer dependencies, bump up WP Core to 5.4.x
 - update raccoon-twig npm dependencies to newest vesions
