@@ -1,5 +1,8 @@
-2.3.2 [31st of May 2020]
+2.3.2 [3rd of July 2020]
 - remove default body styles
+- update composer dependencies, bump up WP Core to 5.4.2
+- bump up NPM dependencies
+- apply new configuration schema for the webpack copy plugin
 
 2.3.1 [1st of May 2020]
 - update composer dependencies, bump up WP Core to 5.4.x
