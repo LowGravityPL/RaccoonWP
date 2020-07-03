@@ -1,10 +1,10 @@
 ![RaccoonWP logo](https://lowgravity.pl/raccoon-head-scaled-small.png)
 # RaccoonWP
-**This is 2.3.1 release. If you find any issues let us know**
+**This is 2.3.2 release. If you find any issues let us know**
 
 Raccoon is a modern architecture stack and a starter theme for [WordPress](https://wordpress.org/).
 
-The stack is based on Composer on the backend. NodeJs with Webpack are used on the frontend.
+The stack is based on PHPComposer on the backend. Frontend build uses NodeJs and Webpack to bundle the files together for dev and production.
 This composition allows for quick and efficient development using the tools which are **state of the art in 2020.**
 
 You should use it as your boilerplate/starter kit to obtain **optimal architecture with performance, extensibility and security** in mind.
@@ -15,7 +15,7 @@ Raccoon is best suited for fresh projects (but there is no problem in implementi
 Please find [the documentation on our github page](https://raccoonwp.lowgravity.pl)
 
 ### Status
-![Version](https://img.shields.io/badge/Version-2.3.1-green.svg)
+![Version](https://img.shields.io/badge/Version-2.3.2-green.svg)
 ![PHP from Packagist](https://img.shields.io/packagist/php-v/lowgravitypl/raccoonwp.svg)
 [![License](https://poser.pugx.org/lowgravitypl/raccoonwp/license)](https://packagist.org/packages/lowgravitypl/raccoonwp)
 
@@ -40,7 +40,7 @@ Packagist:
     - [On the roadmap] E2E tests
     - [On the roadmap] Progressive Web App and Service Worker
 - Theme:
-    - Customizable theme build process based on newest [Webpack 4.36](https://webpack.js.org/) with all its features
+    - Customizable theme build process based on newest [Webpack 4.43](https://webpack.js.org/) with all its features
     like dead code elimination, bundle analysis, watch process and more.
     - Flexible CSS: Plain SASS by default / Bootstrap 4 / Foundation 5 / Bourbon/Neat or anything else (check [recipes section](https://raccoonwp.lowgravity.pl/recipes)).
     - Modern JS: all newest features like ES6, modules, spreads, destructuring objects and arrays etc.
