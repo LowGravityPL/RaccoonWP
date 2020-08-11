@@ -1,13 +1,13 @@
 //Because why not?
 const bannerManifest = `
 ========================================================================================
-__________                                         __      ____________ 
+__________                                         __      ____________
 \\______   \\_____    ____  ____  ____   ____   ____/  \\    /  \\______   \\
  |       _/\\__  \\ _/ ___\\/ ___\\/  _ \\ /  _ \\ /    \\   \\/\\/   /|     ___/
- |    |   \\ / __ \\\\  \\__\\  \\__(  <_> |  <_> )   |  \\        / |    |    
- |____|_  /(____  /\\___  >___  >____/ \\____/|___|  /\\__/\\  /  |____|    
-        \\/      \\/     \\/    \\/                  \\/      \\/             
-        
+ |    |   \\ / __ \\\\  \\__\\  \\__(  <_> |  <_> )   |  \\        / |    |
+ |____|_  /(____  /\\___  >___  >____/ \\____/|___|  /\\__/\\  /  |____|
+        \\/      \\/     \\/    \\/                  \\/      \\/
+
  Documentation, issues, contributions welcome at https://raccoonwp.lowgravity.pl
 ========================================================================================
 `;
@@ -22,7 +22,7 @@ const url                  = require('url');
 const webpack              = require('webpack');
 const webpackDevMiddleware = require('webpack-dev-middleware');
 const webpackHotMiddleware = require('webpack-hot-middleware');
-const webpackMerge         = require('webpack-merge');
+const { merge }         = require('webpack-merge');
 const addDevEntries        = require('./helpers/addDevServerEntry');
 
 //Load basic dev config
@@ -30,7 +30,7 @@ let webpackConfig = require('./webpack.config')({mode: 'development', isWatching
 const userConfig  = require('./helpers/userConfigProvider')();
 
 //default watch config
-const config = webpackMerge({
+const config = merge({
     bsHost:     'localhost',
     bsPort:     3000,
     bsOpen:     false,

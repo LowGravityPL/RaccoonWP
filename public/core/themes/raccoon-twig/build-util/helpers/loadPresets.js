@@ -1,6 +1,6 @@
 //@See https://github.com/TheLarkInn/webpack-workshop-2018/blob/feature/0700-custom-loaders/build-utils/loadPresets.js
 
-const webpackMerge = require("webpack-merge");
+const { merge } = require("webpack-merge");
 
 const applyPresets = (env = {presets: []}) => {
     const presets = env.presets || [];
@@ -10,7 +10,7 @@ const applyPresets = (env = {presets: []}) => {
         require(`../presets/webpack.${presetName}`)(env)
     );
 
-    return webpackMerge({}, ...mergedConfigs);
+    return merge({}, ...mergedConfigs);
 };
 
 module.exports = applyPresets;

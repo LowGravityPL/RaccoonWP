@@ -1,4 +1,4 @@
-const webpackMerge = require('webpack-merge');
+const { merge } = require('webpack-merge');
 const modeConfig   = mode => require(`./modes/${mode}`)(mode);
 
 //common configuration
@@ -35,7 +35,7 @@ module.exports = ({mode, presets, isWatching} = {mode: "production", presets: []
         }
     };
 
-    return webpackMerge(
+    return merge(
         config,
         commonModules(isWatching),
         commonPlugins,
