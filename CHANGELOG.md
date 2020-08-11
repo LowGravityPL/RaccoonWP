@@ -1,3 +1,8 @@
+2.3.3 [11th of August 2020]
+- update composer dependencies
+- bump up NPM dependencies
+- change build process to use new syntax of webpack-merge
+
 2.3.2 [3rd of July 2020]
 - remove default body styles
 - update composer dependencies, bump up WP Core to 5.4.2
