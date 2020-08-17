@@ -1,3 +1,6 @@
+2.3.4 [17th of August 2020]
+- update composer dependencies - bump up WP Core to 5.5.x branch
+
 2.3.3 [11th of August 2020]
 - update composer dependencies
 - bump up NPM dependencies
