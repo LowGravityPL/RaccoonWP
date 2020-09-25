@@ -446,16 +446,16 @@
         },
         {
             "name": "lowgravitypl/raccoonwp-core",
-            "version": "2.3.1",
+            "version": "2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LowGravityPL/RaccoonWP-Core.git",
-                "reference": "723f0c61d0abef039c9308256fb1afe57a4837f7"
+                "reference": "6e9a5be615e4ca4723dca6b1ae69700f94ac60bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LowGravityPL/RaccoonWP-Core/zipball/723f0c61d0abef039c9308256fb1afe57a4837f7",
-                "reference": "723f0c61d0abef039c9308256fb1afe57a4837f7",
+                "url": "https://api.github.com/repos/LowGravityPL/RaccoonWP-Core/zipball/6e9a5be615e4ca4723dca6b1ae69700f94ac60bd",
+                "reference": "6e9a5be615e4ca4723dca6b1ae69700f94ac60bd",
                 "shasum": ""
             },
             "require": {
@@ -496,7 +496,7 @@
                 "stack",
                 "wordpress"
             ],
-            "time": "2020-09-24T16:31:46+00:00"
+            "time": "2020-09-25T11:20:21+00:00"
         },
         {
             "name": "lowgravitypl/raccoonwp-mu-framework",

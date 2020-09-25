@@ -13,7 +13,7 @@ $app = new \RaccoonWP\RaccoonApp($root_directory, 'public');
 $app->initialize();
 
 //Set up MySQL table prefix for that installation
-$table_prefix = getenv('DB_PREFIX') ?: 'wp_';
+$table_prefix = $_ENV['DB_PREFIX'] ?: 'wp_';
 
 //Include WordPress
 require_once(ABSPATH . 'wp-settings.php');
