@@ -27,8 +27,8 @@ module.exports = isWatching => {
             {
                 loader:  'postcss-loader',
                 options: {
-                    config: {
-                        path: `${commonPaths.rootPath}/build-util/common`
+                    postcssOptions: {
+                        config: `${commonPaths.rootPath}/build-util/common`
                     }
                 }
             },
