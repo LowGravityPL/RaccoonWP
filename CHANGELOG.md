@@ -1,3 +1,7 @@
+2.4 [25th of August 2020]
+- update RaccoonWp-Core to 2.4, add examples of how to use new features like common envs config
+- update WP Core and other composer dependencies
+
 2.3.4 [17th of August 2020]
 - update composer dependencies - bump up WP Core to 5.5.x branch
 
