@@ -1,3 +1,6 @@
+2.4 [14th of October 2020]
+- Fix notice about undefined index DB_PREFIX
+
 2.4 [25th of August 2020]
 - update RaccoonWp-Core to 2.4, add examples of how to use new features like common envs config
 - update WP Core and other composer dependencies
