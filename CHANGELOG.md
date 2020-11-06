@@ -3,9 +3,10 @@
 - Add composer 2.x support
 - Fix notice about undefined index DB_PREFIX
 - Install QueryMonitor as dev dependency
+- update RaccoonWP-Core to 2.5
 
 2.4 [25th of August 2020]
-- update RaccoonWp-Core to 2.4, add examples of how to use new features like common envs config
+- update RaccoonWP-Core to 2.4, add examples of how to use new features like common envs config
 - update WP Core and other composer dependencies
 - update NPM dependencies, postcss-loader comes with new API syntax so that had to be adjusted
 

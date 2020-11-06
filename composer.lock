@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "180a139496d0e8a8aa81320bb1e53ade",
+    "content-hash": "9d8da69ad4025f1674694c8732b2af27",
     "packages": [
         {
             "name": "boxuk/wp-muplugin-loader",
@@ -486,16 +486,16 @@
         },
         {
             "name": "lowgravitypl/raccoonwp-core",
-            "version": "2.4",
+            "version": "2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LowGravityPL/RaccoonWP-Core.git",
-                "reference": "6e9a5be615e4ca4723dca6b1ae69700f94ac60bd"
+                "reference": "c8d06b72c13849debea5c763cdd22e3e655378cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LowGravityPL/RaccoonWP-Core/zipball/6e9a5be615e4ca4723dca6b1ae69700f94ac60bd",
-                "reference": "6e9a5be615e4ca4723dca6b1ae69700f94ac60bd",
+                "url": "https://api.github.com/repos/LowGravityPL/RaccoonWP-Core/zipball/c8d06b72c13849debea5c763cdd22e3e655378cc",
+                "reference": "c8d06b72c13849debea5c763cdd22e3e655378cc",
                 "shasum": ""
             },
             "require": {
@@ -538,9 +538,9 @@
             ],
             "support": {
                 "issues": "https://github.com/LowGravityPL/RaccoonWP-Core/issues",
-                "source": "https://github.com/LowGravityPL/RaccoonWP-Core/tree/2.4"
+                "source": "https://github.com/LowGravityPL/RaccoonWP-Core/tree/2.5"
             },
-            "time": "2020-09-25T11:20:21+00:00"
+            "time": "2020-11-06T11:14:36+00:00"
         },
         {
             "name": "lowgravitypl/raccoonwp-mu-framework",
