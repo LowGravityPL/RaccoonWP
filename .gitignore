@@ -34,3 +34,6 @@
 /public/core/themes/raccoon-twig/node_modules/
 /public/core/themes/raccoon-twig/build-util/user.config.js
 /public/core/themes/raccoon-twig/dist/
+
+# Query monitor symlink (install itself when activated)
+/public/core/db.php
