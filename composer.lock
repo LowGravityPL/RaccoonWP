@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3849d6cff5e84fb3662352b57089a3ab",
+    "content-hash": "180a139496d0e8a8aa81320bb1e53ade",
     "packages": [
         {
             "name": "boxuk/wp-muplugin-loader",
@@ -1066,7 +1066,26 @@
             "homepage": "https://wordpress.org/plugins/timber-library/"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "wpackagist-plugin/query-monitor",
+            "version": "3.6.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/query-monitor/",
+                "reference": "tags/3.6.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.6.4.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/query-monitor/"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],
