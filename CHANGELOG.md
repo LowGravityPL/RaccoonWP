@@ -1,4 +1,6 @@
-2.4 [14th of October 2020]
+2.5 [6th of November 2020]
+- Replace unmaintained lkwdwrd/wp-muplugin-loader with boxuk/wp-muplugin-loader
+- Add composer 2.x support
 - Fix notice about undefined index DB_PREFIX
 
 2.4 [25th of August 2020]

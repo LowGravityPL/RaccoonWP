@@ -1,6 +1,6 @@
 ![RaccoonWP logo](https://lowgravity.pl/raccoon-head-scaled-small.png)
 # RaccoonWP
-**This is 2.4 release. If you find any issues let us know**
+**This is 2.5 release. If you find any issues let us know**
 
 Raccoon is a modern architecture stack and a starter theme for [WordPress](https://wordpress.org/).
 
@@ -15,12 +15,11 @@ Raccoon is best suited for fresh projects (but there is no problem in implementi
 Please find [the documentation on our github page](https://raccoonwp.lowgravity.pl)
 
 ### Status
-![Version](https://img.shields.io/badge/Version-2.g4-green.svg)
+![Version](https://img.shields.io/badge/Version-2.5-green.svg)
 ![PHP from Packagist](https://img.shields.io/packagist/php-v/lowgravitypl/raccoonwp.svg)
 [![License](https://poser.pugx.org/lowgravitypl/raccoonwp/license)](https://packagist.org/packages/lowgravitypl/raccoonwp)
 
 Packagist:
-
 [![Latest Stable Version](https://poser.pugx.org/lowgravitypl/raccoonwp/v/stable)](https://packagist.org/packages/lowgravitypl/raccoonwp)
 [![Latest Unstable Version](https://poser.pugx.org/lowgravitypl/raccoonwp/v/unstable)](https://packagist.org/packages/lowgravitypl/raccoonwp)
 [![composer.lock](https://poser.pugx.org/lowgravitypl/raccoonwp/composerlock)](https://packagist.org/packages/lowgravitypl/raccoonwp)
