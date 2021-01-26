@@ -10,7 +10,7 @@ module.exports = env => {
     ];
 
     return {
-        devtool: 'cheap-eval-source-map',
+        devtool: 'eval',
         plugins: devPlugins
     };
 };
