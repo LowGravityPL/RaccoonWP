@@ -1,3 +1,11 @@
+2.6 [26th of January 2021]
+- update composer dependencies like query-monitor, extended-cpts etc.
+- bump up minimum php version to 7.3 as 7.2 is EOL
+- bump up WP Core to 5.6
+- Migrate webpack build process to webpack5 (needs observation)
+- update npm dependencies to its newest version
+- update RaccoonWP-Core to 2.6
+
 2.5 [6th of November 2020]
 - Replace unmaintained lkwdwrd/wp-muplugin-loader with boxuk/wp-muplugin-loader
 - Add composer 2.x support
