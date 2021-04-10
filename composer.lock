@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "91a812a38e41ba619d94559ca79a3940",
+    "content-hash": "7b10ffa4b24483505324f448a5c13d44",
     "packages": [
         {
             "name": "boxuk/wp-muplugin-loader",
@@ -281,16 +281,16 @@
         },
         {
             "name": "johnbillion/extended-cpts",
-            "version": "4.5.0",
+            "version": "4.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnbillion/extended-cpts.git",
-                "reference": "da72234393818600f1eecbcb7d6e651dfeca6f75"
+                "reference": "59ce9f4e0422512eec6f698ccba4a6a81b018fdb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnbillion/extended-cpts/zipball/da72234393818600f1eecbcb7d6e651dfeca6f75",
-                "reference": "da72234393818600f1eecbcb7d6e651dfeca6f75",
+                "url": "https://api.github.com/repos/johnbillion/extended-cpts/zipball/59ce9f4e0422512eec6f698ccba4a6a81b018fdb",
+                "reference": "59ce9f4e0422512eec6f698ccba4a6a81b018fdb",
                 "shasum": ""
             },
             "require": {
@@ -302,11 +302,11 @@
                 "johnbillion/falsey-assertequals-detector": "^2",
                 "phpcompatibility/phpcompatibility-wp": "^2",
                 "phpunit/phpunit": "^6",
-                "roots/wordpress": "*",
+                "roots/wordpress": "^5.7.0",
                 "vlucas/phpdotenv": "^3",
                 "wp-cli/db-command": "^2.0",
                 "wp-coding-standards/wpcs": "2.3.0",
-                "wp-phpunit/wp-phpunit": "*"
+                "wp-phpunit/wp-phpunit": "^5.7.0"
             },
             "suggest": {
                 "seravo/wp-custom-bulk-actions": "Custom Bulk Actions",
@@ -338,7 +338,7 @@
             "homepage": "https://github.com/johnbillion/extended-cpts/",
             "support": {
                 "issues": "https://github.com/johnbillion/extended-cpts/issues",
-                "source": "https://github.com/johnbillion/extended-cpts/tree/4.5.0"
+                "source": "https://github.com/johnbillion/extended-cpts/tree/4.5.2"
             },
             "funding": [
                 {
@@ -346,24 +346,24 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-01-12T23:27:05+00:00"
+            "time": "2021-03-21T00:26:19+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "5.6.0",
+            "version": "5.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "3055975734646c8d0b8caf7b5af168ced6ec4309"
+                "reference": "22ea3c6aa631e296c528f58a67371fb2a5e674f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/3055975734646c8d0b8caf7b5af168ced6ec4309",
-                "reference": "3055975734646c8d0b8caf7b5af168ced6ec4309",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/22ea3c6aa631e296c528f58a67371fb2a5e674f2",
+                "reference": "22ea3c6aa631e296c528f58a67371fb2a5e674f2",
                 "shasum": ""
             },
             "require": {
-                "johnpbloch/wordpress-core": "5.6.0",
+                "johnpbloch/wordpress-core": "5.7.0",
                 "johnpbloch/wordpress-core-installer": "^1.0 || ^2.0",
                 "php": ">=5.6.20"
             },
@@ -392,20 +392,20 @@
                 "source": "http://core.trac.wordpress.org/browser",
                 "wiki": "http://codex.wordpress.org/"
             },
-            "time": "2020-12-08T22:34:35+00:00"
+            "time": "2021-03-09T20:32:28+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "5.6.0",
+            "version": "5.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "f074617dd69f466302836d1ae5de75c0bd7b6dfd"
+                "reference": "8b057056692ca196aaa7a7ddd915f29426922c6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/f074617dd69f466302836d1ae5de75c0bd7b6dfd",
-                "reference": "f074617dd69f466302836d1ae5de75c0bd7b6dfd",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/8b057056692ca196aaa7a7ddd915f29426922c6d",
+                "reference": "8b057056692ca196aaa7a7ddd915f29426922c6d",
                 "shasum": ""
             },
             "require": {
@@ -413,7 +413,7 @@
                 "php": ">=5.6.20"
             },
             "provide": {
-                "wordpress/core-implementation": "5.6.0"
+                "wordpress/core-implementation": "5.7.0"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -440,7 +440,7 @@
                 "source": "https://core.trac.wordpress.org/browser",
                 "wiki": "https://codex.wordpress.org/"
             },
-            "time": "2020-12-08T22:34:23+00:00"
+            "time": "2021-03-09T20:32:23+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -739,7 +739,7 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.22.0",
+            "version": "v1.22.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
@@ -798,7 +798,7 @@
                 "portable"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.22.0"
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.22.1"
             },
             "funding": [
                 {
@@ -818,16 +818,16 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.22.0",
+            "version": "v1.22.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "f377a3dd1fde44d37b9831d68dc8dea3ffd28e13"
+                "reference": "5232de97ee3b75b0360528dae24e73db49566ab1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/f377a3dd1fde44d37b9831d68dc8dea3ffd28e13",
-                "reference": "f377a3dd1fde44d37b9831d68dc8dea3ffd28e13",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/5232de97ee3b75b0360528dae24e73db49566ab1",
+                "reference": "5232de97ee3b75b0360528dae24e73db49566ab1",
                 "shasum": ""
             },
             "require": {
@@ -878,7 +878,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.22.0"
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.22.1"
             },
             "funding": [
                 {
@@ -894,11 +894,11 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-07T16:49:33+00:00"
+            "time": "2021-01-22T09:19:47+00:00"
         },
         {
             "name": "symfony/polyfill-php80",
-            "version": "v1.22.0",
+            "version": "v1.22.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php80.git",
@@ -961,7 +961,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php80/tree/v1.22.0"
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.22.1"
             },
             "funding": [
                 {
