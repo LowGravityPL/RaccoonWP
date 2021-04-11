@@ -498,16 +498,16 @@
         },
         {
             "name": "lowgravitypl/raccoonwp-core",
-            "version": "2.6",
+            "version": "2.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LowGravityPL/RaccoonWP-Core.git",
-                "reference": "faeca3083bb9c340345d8e348495f2a90ecb8cc2"
+                "reference": "29c1ff12b813175be4aeddfefe0eae1a94c21d07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LowGravityPL/RaccoonWP-Core/zipball/faeca3083bb9c340345d8e348495f2a90ecb8cc2",
-                "reference": "faeca3083bb9c340345d8e348495f2a90ecb8cc2",
+                "url": "https://api.github.com/repos/LowGravityPL/RaccoonWP-Core/zipball/29c1ff12b813175be4aeddfefe0eae1a94c21d07",
+                "reference": "29c1ff12b813175be4aeddfefe0eae1a94c21d07",
                 "shasum": ""
             },
             "require": {
@@ -550,22 +550,22 @@
             ],
             "support": {
                 "issues": "https://github.com/LowGravityPL/RaccoonWP-Core/issues",
-                "source": "https://github.com/LowGravityPL/RaccoonWP-Core/tree/2.6"
+                "source": "https://github.com/LowGravityPL/RaccoonWP-Core/tree/2.6.1"
             },
-            "time": "2021-01-26T10:22:09+00:00"
+            "time": "2021-04-11T09:02:28+00:00"
         },
         {
             "name": "lowgravitypl/raccoonwp-mu-framework",
-            "version": "2.2",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LowGravityPL/RaccoonWP-MU-Framework.git",
-                "reference": "d9de5326c05834f35aa130ff36df58c6fae5a331"
+                "reference": "8b35db2a9758cfad9efc0453fb32e87e7ebb9ffa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LowGravityPL/RaccoonWP-MU-Framework/zipball/d9de5326c05834f35aa130ff36df58c6fae5a331",
-                "reference": "d9de5326c05834f35aa130ff36df58c6fae5a331",
+                "url": "https://api.github.com/repos/LowGravityPL/RaccoonWP-MU-Framework/zipball/8b35db2a9758cfad9efc0453fb32e87e7ebb9ffa",
+                "reference": "8b35db2a9758cfad9efc0453fb32e87e7ebb9ffa",
                 "shasum": ""
             },
             "require": {
@@ -602,9 +602,9 @@
             ],
             "support": {
                 "issues": "https://github.com/LowGravityPL/RaccoonWP-MU-Framework/issues",
-                "source": "https://github.com/LowGravityPL/RaccoonWP-MU-Framework/tree/2.2"
+                "source": "https://github.com/LowGravityPL/RaccoonWP-MU-Framework/tree/2.2.1"
             },
-            "time": "2021-01-26T10:22:26+00:00"
+            "time": "2021-04-11T09:02:47+00:00"
         },
         {
             "name": "phpoption/phpoption",

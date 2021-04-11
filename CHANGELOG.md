@@ -2,6 +2,7 @@
 - update WP Core to 5.7
 - update NPM dependencies in the theme
 - build process improvements, adding proper css and image minification
+- Update Raccoon Mu Framework (2.2.1) and Raccoon Core (2.6.1) to newest patch versions
 
 2.6 [26th of January 2021]
 - update composer dependencies like query-monitor, extended-cpts etc.
