@@ -1,3 +1,8 @@
+2.7 [11th of April 2021]
+- update WP Core to 5.7
+- update NPM dependencies in the theme
+- build process improvements, adding proper css and image minification
+
 2.6 [26th of January 2021]
 - update composer dependencies like query-monitor, extended-cpts etc.
 - bump up minimum php version to 7.3 as 7.2 is EOL

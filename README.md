@@ -1,6 +1,6 @@
 ![RaccoonWP logo](https://lowgravity.pl/raccoon-head-scaled-small.png)
 # RaccoonWP
-**This is 2.6 release. If you find any issues let us know**
+**This is 2.7 release. If you find any issues let us know**
 
 Raccoon is a modern architecture stack and a starter theme for [WordPress](https://wordpress.org/).
 
