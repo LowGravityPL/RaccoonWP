@@ -63,20 +63,13 @@ module.exports = isWatching => {
         }
     };
 
-    const  vueRules = {
-        test: /\.vue$/,
-        exclude: /node_modules/,
-        loader: 'vue-loader'
-    };
-
     return {
         module: {
             rules: [
                 jsRules,
                 scssRules,
                 internalAssetsRules,
-                externalAssetsRules,
-                vueRules
+                externalAssetsRules
             ]
         }
     };

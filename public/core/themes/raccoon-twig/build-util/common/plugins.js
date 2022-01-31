@@ -2,8 +2,6 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const Copy                 = require('copy-webpack-plugin');
 const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
 
-const VueLoaderPlugin      = require('vue-loader/lib/plugin');
-
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const commonPaths     = require('./paths');
@@ -46,7 +44,6 @@ module.exports = {
         }),
         new MiniCssExtractPlugin({
             filename: "[name].[contenthash].css",
-        }),
-        new VueLoaderPlugin(),
+        })
     ]
 };
