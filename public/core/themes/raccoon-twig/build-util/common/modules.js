@@ -41,25 +41,18 @@ module.exports = isWatching => {
     const internalAssetsRules = {
         test: /\.(eot|woff2|woff|ttf|svg|gif|png|jpe?g|ico)$/,
         include: commonPaths.sourcePath,
-        use:  {
-            loader:  'file-loader',
-            options: {
-                name:     '[path][name].[ext]',
-                emitFile: true,
-            }
+        type: 'asset',//file for over 8kb, url for less
+        generator: {
+            filename: '[path][name][ext][query]'
         }
     };
 
     const externalAssetsRules = {
         test:    /\.(eot|woff2|woff|ttf|svg|gif|png|jpe?g|ico)$/,
         include: /node_modules/,
-        use:     {
-            loader:  'file-loader',
-            options: {
-                name:       '[path][name].[ext]',
-                outputPath: 'vendor/',
-                emitFile:   true,
-            }
+        type: 'asset', //file for over 8kb, url for less
+        generator: {
+            filename: 'vendor/[name][contenthash][ext][query]'
         }
     };
 

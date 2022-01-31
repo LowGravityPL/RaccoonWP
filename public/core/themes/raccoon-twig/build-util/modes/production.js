@@ -1,7 +1,8 @@
-const webpack                   = require('webpack');
-const userConfig                = require('../helpers/userConfigProvider')();
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
+const webpack                = require('webpack');
+const userConfig             = require('../helpers/userConfigProvider')();
+const CssMinimizerPlugin     = require('css-minimizer-webpack-plugin');
+const ImageMinimizerPlugin   = require('image-minimizer-webpack-plugin');
+const {extendDefaultPlugins} = require("svgo");
 
 module.exports = env => {
 
@@ -32,28 +33,38 @@ module.exports = env => {
             new webpack.DefinePlugin({
                 PRODUCTION: JSON.stringify(true),
             }),
-        new ImageMinimizerPlugin({
-            maxConcurrency: 3,
-            minimizerOptions: {
-                // Lossless optimization with custom option
-                // Feel free to experiment with options for better result for you
-                plugins: [
-                    ['gifsicle', { interlaced: true }],
-                    ['mozjpeg', { quality: 75 }],
-                    ['optipng', { optimizationLevel: 5 }],
-                    [
-                        'svgo',
-                        {
-                            plugins: [
+            new ImageMinimizerPlugin({
+                concurrency: 3,
+                minimizer: {
+                    implementation: ImageMinimizerPlugin.imageminMinify,
+                    options : {
+                        // Lossless optimization with custom option
+                        // Feel free to experiment with options for better result for you
+                        plugins: [
+                            ['gifsicle', {interlaced: true}],
+                            ['mozjpeg', {quality: 80}],
+                            ['optipng', {optimizationLevel: 5}],
+                            [
+                                'svgo',
                                 {
-                                    removeViewBox: false,
+                                    plugins: extendDefaultPlugins([
+                                        {
+                                            name: "removeViewBox",
+                                            active: false,
+                                        },
+                                        {
+                                            name: "addAttributesToSVGElement",
+                                            params: {
+                                                attributes: [{xmlns: "http://www.w3.org/2000/svg"}],
+                                            },
+                                        },
+                                    ]),
                                 },
                             ],
-                        },
-                    ],
-                ],
-            },
-        }),
+                        ],
+                    }
+                },
+            }),
         ]
     };
 

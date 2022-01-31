@@ -20,19 +20,19 @@ module.exports = {
             patterns: [
                 {
                     from:             'images/**/*',
-                    to:               `${commonPaths.outputPath}`,
+                    to:               `${commonPaths.outputPath}/[path][name].[contenthash][ext]`,
                     globOptions:      copyGlobOptions,
                     noErrorOnMissing: true,
                 },
                 {
                     from:             'fonts/**/*',
-                    to:               `${commonPaths.outputPath}`,
+                    to:               `${commonPaths.outputPath}/[path][name].[contenthash][ext]`,
                     globOptions:      copyGlobOptions,
                     noErrorOnMissing: true,
                 },
                 {
                     from:             'other/**/*',
-                    to:               `${commonPaths.outputPath}`,
+                    to:               `${commonPaths.outputPath}/[path][name].[contenthash][ext]`,
                     globOptions:      copyGlobOptions,
                     noErrorOnMissing: true,
                 }
