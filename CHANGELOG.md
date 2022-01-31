@@ -1,3 +1,13 @@
+2.8 [31st of January 2022]
+Massive update after 9 months of inactivity. Possible backward incompatibility.
+- update WP Core to 5.9
+- update other composer dependencies including new major version of extended CPTs
+- bump up minimal PHP version to 7.4
+- update NPM dependencies to newest version
+- improve theme build image optimization process, copying assets process, introduce new assets loader
+- remove Vue and its dependencies
+- Update Raccoon Mu Framework (2.3) and Raccoon Core (2.7) to the newest versions
+
 2.7 [11th of April 2021]
 - update WP Core to 5.7
 - update NPM dependencies in the theme
