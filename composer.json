@@ -36,7 +36,15 @@
     ],
     "config": {
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "platform":{
+            "php":"7.4"
+        },
+        "allow-plugins": {
+            "composer/installers": true,
+            "johnpbloch/wordpress-core-installer": true,
+            "boxuk/wp-muplugin-loader": true
+        }
     },
     "extra": {
         "installer-paths": {
@@ -64,17 +72,17 @@
         }
     ],
     "require": {
-        "php": "^7.3",
+        "php": "^7.4",
         "boxuk/wp-muplugin-loader": "^1.3",
         "composer/installers": "^1.10",
-        "johnbillion/extended-cpts": "^4.5",
-        "johnpbloch/wordpress": "^5.7",
-        "lowgravitypl/raccoonwp-core": "^2.6",
-        "lowgravitypl/raccoonwp-mu-framework": "^2.2",
+        "johnbillion/extended-cpts": "^5.0",
+        "johnpbloch/wordpress": "^5.9",
+        "lowgravitypl/raccoonwp-core": "^2.7",
+        "lowgravitypl/raccoonwp-mu-framework": "^2.3",
         "roots/wp-password-bcrypt": "^1.0",
-        "wpackagist-plugin/timber-library": "^1.18"
+        "wpackagist-plugin/timber-library": "^1.19"
     },
     "require-dev": {
-        "wpackagist-plugin/query-monitor": "^3.6"
+        "wpackagist-plugin/query-monitor": "^3.8"
     }
 }
