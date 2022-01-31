@@ -1,3 +1,6 @@
+2.8.1 [31st of January 2022]
+- fix issue in watch mode
+
 2.8 [31st of January 2022]
 Massive update after 9 months of inactivity. Possible backward incompatibility.
 - update WP Core to 5.9

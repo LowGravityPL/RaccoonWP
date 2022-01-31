@@ -63,7 +63,6 @@ const middleware = [
     webpackDevMiddleware(bundler, {
         publicPath:  webpackConfig.output.publicPath,
         writeToDisk: true,
-        hot:         true,
         stats:       {
             colors:  true,
             modules: false
