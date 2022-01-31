@@ -1,3 +1,6 @@
+2.8.2 [31st of January 2022]
+- update minimum Node version in .nvmrc to `14.18`
+
 2.8.1 [31st of January 2022]
 - fix issue in watch mode
 
