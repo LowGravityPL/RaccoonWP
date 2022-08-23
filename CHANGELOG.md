@@ -1,3 +1,8 @@
+2.9.0 [23rd of August 2022]
+- add support for PHP 8.0 in composer requirements
+- update WP Core to 6.x
+- perform other minor updates like query monitor and timber library
+
 2.8.2 [31st of January 2022]
 - update minimum Node version in .nvmrc to `14.18`
 
