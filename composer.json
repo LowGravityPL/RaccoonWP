@@ -71,15 +71,15 @@
     "require": {
         "php": "^7.4||^8.0",
         "boxuk/wp-muplugin-loader": "^2.0",
-        "composer/installers": "^1.10",
+        "composer/installers": "^v2.2",
         "johnbillion/extended-cpts": "^5.0",
         "johnpbloch/wordpress": "^6.0",
-        "lowgravitypl/raccoonwp-core": "^2.7",
-        "lowgravitypl/raccoonwp-mu-framework": "^2.3",
+        "lowgravitypl/raccoonwp-core": "^2.8",
+        "lowgravitypl/raccoonwp-mu-framework": "^2.5.1",
         "roots/wp-password-bcrypt": "^1.0",
         "wpackagist-plugin/timber-library": "^1.20"
     },
     "require-dev": {
-        "wpackagist-plugin/query-monitor": "^3.9"
+        "wpackagist-plugin/query-monitor": "^3.10"
     }
 }

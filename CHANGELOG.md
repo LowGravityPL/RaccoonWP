@@ -1,3 +1,7 @@
+2.10.0 [16th of September 2022]
+- Improve compatibility with PHP8
+- update composer dependencies
+
 2.9.0 [23rd of August 2022]
 - add support for PHP 8.0 in composer requirements
 - update WP Core to 6.x
