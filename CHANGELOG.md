@@ -1,3 +1,8 @@
+2.11.0 [24th of October 2022]
+- Improve build process
+- update composer dependencies
+- update npm dependencies
+
 2.10.0 [16th of September 2022]
 - Improve compatibility with PHP8
 - update composer dependencies
