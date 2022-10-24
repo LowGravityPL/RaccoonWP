@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5a686614dbf63a5b6dad1ec0159c3439",
+    "content-hash": "f51cb693abd54e6dc8b8bebb209e034c",
     "packages": [
         {
             "name": "boxuk/wp-muplugin-loader",
@@ -418,20 +418,20 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "6.0.2",
+            "version": "6.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "6c3d7d1a4ddb3b27e6f3ca4b2018b0150d7221b7"
+                "reference": "916a0d60b397878f9292bc1e89718da04eb59e28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/6c3d7d1a4ddb3b27e6f3ca4b2018b0150d7221b7",
-                "reference": "6c3d7d1a4ddb3b27e6f3ca4b2018b0150d7221b7",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/916a0d60b397878f9292bc1e89718da04eb59e28",
+                "reference": "916a0d60b397878f9292bc1e89718da04eb59e28",
                 "shasum": ""
             },
             "require": {
-                "johnpbloch/wordpress-core": "6.0.2",
+                "johnpbloch/wordpress-core": "6.0.3",
                 "johnpbloch/wordpress-core-installer": "^1.0 || ^2.0",
                 "php": ">=5.6.20"
             },
@@ -460,20 +460,20 @@
                 "issues": "https://core.trac.wordpress.org/",
                 "source": "https://core.trac.wordpress.org/browser"
             },
-            "time": "2022-08-30T17:46:21+00:00"
+            "time": "2022-10-17T21:17:26+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "6.0.2",
+            "version": "6.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "aa7b334880fd8158abe64469e71570bd8815f273"
+                "reference": "f07b5dfd83fb728b0877ee48a4d792624338aa8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/aa7b334880fd8158abe64469e71570bd8815f273",
-                "reference": "aa7b334880fd8158abe64469e71570bd8815f273",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/f07b5dfd83fb728b0877ee48a4d792624338aa8e",
+                "reference": "f07b5dfd83fb728b0877ee48a4d792624338aa8e",
                 "shasum": ""
             },
             "require": {
@@ -481,7 +481,7 @@
                 "php": ">=5.6.20"
             },
             "provide": {
-                "wordpress/core-implementation": "6.0.2"
+                "wordpress/core-implementation": "6.0.3"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -508,7 +508,7 @@
                 "source": "https://core.trac.wordpress.org/browser",
                 "wiki": "https://codex.wordpress.org/"
             },
-            "time": "2022-08-30T17:46:17+00:00"
+            "time": "2022-10-17T21:17:21+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -566,21 +566,21 @@
         },
         {
             "name": "lowgravitypl/raccoonwp-core",
-            "version": "2.8.0",
+            "version": "2.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LowGravityPL/RaccoonWP-Core.git",
-                "reference": "96d178b3607913c2c7fac2b6b5034fd85222cf03"
+                "reference": "81cce79b041112166c71cb1e60be726a8d3d2444"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LowGravityPL/RaccoonWP-Core/zipball/96d178b3607913c2c7fac2b6b5034fd85222cf03",
-                "reference": "96d178b3607913c2c7fac2b6b5034fd85222cf03",
+                "url": "https://api.github.com/repos/LowGravityPL/RaccoonWP-Core/zipball/81cce79b041112166c71cb1e60be726a8d3d2444",
+                "reference": "81cce79b041112166c71cb1e60be726a8d3d2444",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.4||^8.0",
-                "vlucas/phpdotenv": "^5.4"
+                "vlucas/phpdotenv": "^5.5"
             },
             "type": "library",
             "autoload": {
@@ -618,9 +618,9 @@
             ],
             "support": {
                 "issues": "https://github.com/LowGravityPL/RaccoonWP-Core/issues",
-                "source": "https://github.com/LowGravityPL/RaccoonWP-Core/tree/2.8.0"
+                "source": "https://github.com/LowGravityPL/RaccoonWP-Core/tree/2.8.1"
             },
-            "time": "2022-08-23T20:12:24+00:00"
+            "time": "2022-10-24T06:10:06+00:00"
         },
         {
             "name": "lowgravitypl/raccoonwp-mu-framework",
@@ -1078,16 +1078,16 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v5.4.1",
+            "version": "v5.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "264dce589e7ce37a7ba99cb901eed8249fbec92f"
+                "reference": "1a7ea2afc49c3ee6d87061f5a233e3a035d0eae7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/264dce589e7ce37a7ba99cb901eed8249fbec92f",
-                "reference": "264dce589e7ce37a7ba99cb901eed8249fbec92f",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/1a7ea2afc49c3ee6d87061f5a233e3a035d0eae7",
+                "reference": "1a7ea2afc49c3ee6d87061f5a233e3a035d0eae7",
                 "shasum": ""
             },
             "require": {
@@ -1102,15 +1102,19 @@
             "require-dev": {
                 "bamarni/composer-bin-plugin": "^1.4.1",
                 "ext-filter": "*",
-                "phpunit/phpunit": "^7.5.20 || ^8.5.21 || ^9.5.10"
+                "phpunit/phpunit": "^7.5.20 || ^8.5.30 || ^9.5.25"
             },
             "suggest": {
                 "ext-filter": "Required to use the boolean validator."
             },
             "type": "library",
             "extra": {
+                "bamarni-bin": {
+                    "bin-links": true,
+                    "forward-command": true
+                },
                 "branch-alias": {
-                    "dev-master": "5.4-dev"
+                    "dev-master": "5.5-dev"
                 }
             },
             "autoload": {
@@ -1142,7 +1146,7 @@
             ],
             "support": {
                 "issues": "https://github.com/vlucas/phpdotenv/issues",
-                "source": "https://github.com/vlucas/phpdotenv/tree/v5.4.1"
+                "source": "https://github.com/vlucas/phpdotenv/tree/v5.5.0"
             },
             "funding": [
                 {
@@ -1154,19 +1158,19 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-12-12T23:22:04+00:00"
+            "time": "2022-10-16T01:01:54+00:00"
         },
         {
             "name": "wpackagist-plugin/timber-library",
-            "version": "1.20.0",
+            "version": "1.21.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/timber-library/",
-                "reference": "tags/1.20.0"
+                "reference": "tags/1.21.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/timber-library.1.20.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/timber-library.1.21.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"

@@ -76,8 +76,8 @@
         "johnpbloch/wordpress": "^6.0",
         "lowgravitypl/raccoonwp-core": "^2.8",
         "lowgravitypl/raccoonwp-mu-framework": "^2.5.1",
-        "roots/wp-password-bcrypt": "^1.0",
-        "wpackagist-plugin/timber-library": "^1.20"
+        "roots/wp-password-bcrypt": "^1.1",
+        "wpackagist-plugin/timber-library": "^1.21"
     },
     "require-dev": {
         "wpackagist-plugin/query-monitor": "^3.10"
