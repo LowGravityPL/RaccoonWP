@@ -1,10 +1,13 @@
 <?php
+
 /**
  * Renders the post archive view.
  */
+
 use RaccoonSite\DefaultPostHelper;
+use Timber\Timber;
 
-$data            = Timber::get_context();
-$data[ 'posts' ] = DefaultPostHelper::getCurrentPostsList();
+$data = Timber::context();
+$data['posts'] = DefaultPostHelper::getCurrentPostsList();
 
-\Timber::render('index.twig', $data);
+Timber::render('index.twig', $data);
