@@ -10,9 +10,11 @@
 {% block header %}
     {% include 'layout/header-default.twig' with header_data only %}
 {% endblock %}
-{% block content %}
+<main class="site-main">
+    {% block content %}
 
-{% endblock %}
+    {% endblock %}
+</main>
 {% block footer %}
     {% include 'layout/footer-default.twig' with footer_data only %}
 {% endblock %}

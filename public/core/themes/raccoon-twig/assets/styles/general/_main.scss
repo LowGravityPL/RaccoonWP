@@ -28,6 +28,12 @@ img {
     height: auto;
 }
 
+.container {
+    max-width: $max-content-width;
+    margin: 0 auto;
+    padding: $desktop-gutter;
+}
+
 ::selection {
     text-shadow: none;
     background: $selection-color;

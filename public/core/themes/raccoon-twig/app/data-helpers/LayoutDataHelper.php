@@ -50,7 +50,7 @@ class LayoutDataHelper extends DefaultDataHelper
         return [
             'copyright' => [
                 'url'  => 'https://lowgravity.pl',
-                'year' => 2019,
+                'year' => (int) date('Y'),
                 'name' => 'LowGravity.pl',
             ],
         ];

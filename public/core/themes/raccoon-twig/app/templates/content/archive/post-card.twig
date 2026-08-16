@@ -35,11 +35,13 @@
         >
             {{ excerpt }}
         </section>
-        <footer>
-            {{ __('Written by', 'raccoonwp') }}
-            <a href="{{ author_archive_url }}">
-                {{ author_name }}
-            </a>
-        </footer>
+        {% if author_name %}
+            <footer>
+                {{ __('Written by', 'raccoonwp') }}
+                <a href="{{ author_archive_url }}">
+                    {{ author_name }}
+                </a>
+            </footer>
+        {% endif %}
     </div>
 </article>
