@@ -14,6 +14,7 @@ if (class_exists('RaccoonMUFramework\AcfJsonHelper')) {
 // Check if DefaultDataHelper exists to prevent errors when RaccoonMUFramework is not loaded.
 if (class_exists('RaccoonMUFramework\DefaultDataHelper')) {
     require_once(__DIR__ . '/DataHelpers/DefaultPostHelper.php');
+    require_once(__DIR__ . '/DataHelpers/DefaultPageHelper.php');
 }
 
 //load CPTs and tax here
