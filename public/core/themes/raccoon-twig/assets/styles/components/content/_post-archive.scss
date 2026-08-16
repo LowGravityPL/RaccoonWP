@@ -1,3 +1,7 @@
+@use '../../general/placeholders' as *;
+@use '../../general/mixins' as *;
+@use '../../general/variables' as *;
+
 .post-archive-wrapper {
     @extend %generic-component;
     @include container();

@@ -1,3 +1,7 @@
+@use '../../general/placeholders' as *;
+@use '../../general/mixins' as *;
+@use '../../general/variables' as *;
+
 .post-single-wrapper {
     @include container();
 

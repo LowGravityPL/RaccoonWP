@@ -1,3 +1,6 @@
+@use '../../general/placeholders' as *;
+@use '../../general/variables' as *;
+
 .site-sidebar {
     @extend %generic-component;
 

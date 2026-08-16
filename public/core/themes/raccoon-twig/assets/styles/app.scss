@@ -1,28 +1,18 @@
 /**
- * General settings
- */
-@import 'general/variables';
-@import 'general/placeholders';
-@import 'general/mixins';
-//run normalize-scss to normalize css across the browsers
-//@see: https://necolas.github.io/normalize.css/
-@import '~normalize-scss/sass/normalize';
-
-@include normalize();
-
-/**
+ * normalize is imported as plain CSS from the JS entry (assets/scripts/app.js)
+ * via `modern-normalize`, so it stays out of the Sass module graph.
+ *
  * General layout
  */
-@import 'general/main';
-@import 'general/typography';
-@import 'components/layout/header';
-@import 'components/layout/footer';
-@import 'components/layout/sidebar';
+@use 'general/main';
+@use 'general/typography';
+@use 'components/layout/header';
+@use 'components/layout/footer';
+@use 'components/layout/sidebar';
 
 /**
  * Theme components
  */
-@import 'components/404';
-@import 'components/content/post-archive';
-@import 'components/content/post-card';
-@import 'components/content/post-single';
+@use 'components/content/post-archive';
+@use 'components/content/post-card';
+@use 'components/content/post-single';

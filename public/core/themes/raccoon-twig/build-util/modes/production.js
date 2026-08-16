@@ -2,7 +2,6 @@ const webpack                = require('webpack');
 const userConfig             = require('../helpers/userConfigProvider')();
 const CssMinimizerPlugin     = require('css-minimizer-webpack-plugin');
 const ImageMinimizerPlugin   = require('image-minimizer-webpack-plugin');
-const {extendDefaultPlugins} = require("svgo");
 
 module.exports = env => {
 
@@ -33,41 +32,29 @@ module.exports = env => {
             new webpack.DefinePlugin({
                 PRODUCTION: JSON.stringify(true),
             }),
+            // Raster image compression via sharp (fast, no native imagemin
+            // binaries). Ported from the broadbandnow theme build.
             new ImageMinimizerPlugin({
-                concurrency: 3,
+                test: /\.(jpe?g|png|gif|webp|avif|tiff)$/i,
                 minimizer: {
-                    implementation: ImageMinimizerPlugin.imageminMinify,
-                    options : {
-                        // Lossless optimization with custom option
-                        // Feel free to experiment with options for better result for you
-                        plugins: [
-                            ['gifsicle', {interlaced: true}],
-                            ['mozjpeg', {quality: 80}],
-                            ['optipng', {optimizationLevel: 5}],
-                            [
-                                "svgo",
-                                {
-                                    plugins: [
-                                        {
-                                            name: "preset-default",
-                                            params: {
-                                                overrides: {
-                                                    removeViewBox: false,
-                                                    addAttributesToSVGElement: {
-                                                        params: {
-                                                            attributes: [
-                                                                { xmlns: "http://www.w3.org/2000/svg" },
-                                                            ],
-                                                        },
-                                                    },
-                                                },
-                                            },
-                                        },
-                                    ],
-                                },
-                            ],
-                        ],
-                    }
+                    implementation: ImageMinimizerPlugin.sharpMinify,
+                    options: {
+                        encodeOptions: {
+                            jpeg: { quality: 72, mozjpeg: true },
+                            png: { quality: 72, effort: 5 }, // effort: 5 balances speed vs compression (default: 7)
+                            webp: { quality: 70 },
+                            avif: { cqLevel: 33 },
+                        },
+                    },
+                },
+            }),
+            new ImageMinimizerPlugin({
+                test: /\.svg$/i,
+                minimizer: {
+                    implementation: ImageMinimizerPlugin.svgoMinify,
+                    options: {
+                        encodeOptions: { multipass: true, plugins: ['preset-default'] },
+                    },
                 },
             }),
         ]
