@@ -39,8 +39,13 @@
         "sort-packages": true,
         "allow-plugins": {
             "composer/installers": true,
-            "johnpbloch/wordpress-core-installer": true,
+            "roots/wordpress-core-installer": true,
             "boxuk/wp-muplugin-loader": true
+        },
+        "policy": {
+            "advisories": {
+                "block": false
+            }
         }
     },
     "extra": {
@@ -65,21 +70,20 @@
     "repositories": [
         {
             "type": "composer",
-            "url": "https://wpackagist.org"
+            "url": "https://repo.wp-packages.org"
         }
     ],
     "require": {
-        "php": "^7.4||^8.0",
-        "boxuk/wp-muplugin-loader": "^2.0",
-        "composer/installers": "^v2.2",
-        "johnbillion/extended-cpts": "^5.0",
-        "johnpbloch/wordpress": "^6.0",
-        "lowgravitypl/raccoonwp-core": "^2.8",
+        "php": "^8.0",
+        "boxuk/wp-muplugin-loader": "^2.2",
+        "composer/installers": "^2.3",
+        "johnbillion/extended-cpts": "^5.1",
+        "lowgravitypl/raccoonwp-core": "^2.9",
         "lowgravitypl/raccoonwp-mu-framework": "^2.5.1",
-        "roots/wp-password-bcrypt": "^1.1",
+        "roots/wordpress": "^7.0",
         "timber/timber": "^2.0.0"
     },
     "require-dev": {
-        "wpackagist-plugin/query-monitor": "^3.10"
+        "wp-plugin/query-monitor": "^4.0"
     }
 }
