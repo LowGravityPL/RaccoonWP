@@ -1,0 +1,21 @@
+<article
+    class="page-body page-single"
+    data-page-id="{{ ID }}"
+>
+    <header>
+        {% if featured_image %}
+            <div
+                class="page-hero"
+                style="background-image: url({{ featured_image }})"
+            ></div>
+        {% endif %}
+        <h1
+            class="page-title"
+        >
+            {{ title }}
+        </h1>
+    </header>
+    <div class="page-content">
+        {{ content }}
+    </div>
+</article>

@@ -1,3 +1,6 @@
+@use 'variables' as *;
+@use 'sass:color';
+
 body {
     color: $primary-font-color;
     font-family: $primary-font-family;
@@ -17,7 +20,7 @@ a {
     text-decoration: none;
 
     &:hover {
-        color: lighten($primary-action-color, 20%);
+        color: color.adjust($primary-action-color, $lightness: 20%);
     }
 }
 

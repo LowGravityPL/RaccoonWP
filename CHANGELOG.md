@@ -1,3 +1,17 @@
+3.0.0 [17th of August 2026]
+Major release and the start of the 3.x branch. Backwards incompatible: drops PHP 7.4 support — RaccoonWP now requires PHP 8.0+. Timber 2.x depends on Twig 3, and the only Twig line that still runs on 8.0 (3.11.x) is what a fresh install on 8.0 resolves to.
+- adopt the Roots WordPress core package (`roots/wordpress`), update WP Core to 7.x
+- drop `roots/wp-password-bcrypt` as WP Core now ships native bcrypt hashing
+- move plugin repository from wpackagist.org to the wp-packages.org mirror
+- migrate Timber to 2.x (`timber/timber` ^2.0 with Twig 3), updating the theme templates for the new API
+- raise the PHP floor to 8.0; stop tracking composer.lock so each create-project resolves its own dependency set
+- update other composer dependencies including query-monitor 4.x and extended-cpts
+- migrate the theme build from node-sass to Dart Sass and sharp image compression
+- add the missing WP page template (`page.php` -> `RaccoonSite\DefaultPageHelper` -> `page.twig`), so pages render instead of falling through to the archive
+- fix footer copyright year to derive at runtime instead of a hardcoded value
+- guard the author byline so authorless posts drop it cleanly
+- fix the content-width container: give pages their 1000px reading width with vertical padding and stop clamping the wider archive/single views
+
 2.11.0 [24th of October 2022]
 - Improve build process
 - update composer dependencies

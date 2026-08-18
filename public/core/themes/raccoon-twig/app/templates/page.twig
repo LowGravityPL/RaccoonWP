@@ -1,0 +1,11 @@
+{% extends 'base/layout.twig' %}
+
+{% block content %}
+    <section class="page-single-wrapper container">
+        {% if page %}
+            {% include 'content/single/page-single.twig' with page only %}
+        {% else %}
+            {% include 'content/not-found.twig' %}
+        {% endif %}
+    </section>
+{% endblock %}
