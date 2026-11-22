@@ -1,8 +1,12 @@
 <?php
 
-define('WP_DEBUG', true);
-define('WP_DEBUG_LOG', true);
+define('WP_DEBUG', false);
 define('WP_DEBUG_DISPLAY', false);
+
+// WP_DEBUG_LOG only works with WP_DEBUG on, so log errors and warnings through PHP, outside the web root.
+ini_set('log_errors', '1');
+ini_set('error_log', dirname(__DIR__) . '/debug.log');
+
 define('SCRIPT_DEBUG', false);
 define('SAVEQUERIES', false);
 

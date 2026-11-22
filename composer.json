@@ -39,8 +39,7 @@
         "sort-packages": true,
         "allow-plugins": {
             "composer/installers": true,
-            "roots/wordpress-core-installer": true,
-            "boxuk/wp-muplugin-loader": true
+            "roots/wordpress-core-installer": true
         },
         "policy": {
             "advisories": {
@@ -74,16 +73,16 @@
         }
     ],
     "require": {
-        "php": "^8.0",
-        "boxuk/wp-muplugin-loader": "^2.2",
+        "php": "^8.3",
         "composer/installers": "^2.3",
         "johnbillion/extended-cpts": "^5.1",
         "lowgravitypl/raccoonwp-core": "^2.9",
         "lowgravitypl/raccoonwp-mu-framework": "^2.5.1",
-        "roots/wordpress": "^7.0",
-        "timber/timber": "^2.0.0"
+        "roots/bedrock-autoloader": "^1.1",
+        "roots/wordpress": "^7.1.5",
+        "timber/timber": "^2.5.1"
     },
     "require-dev": {
-        "wp-plugin/query-monitor": "^4.0"
+        "wp-plugin/query-monitor": "^4.1.1"
     }
 }
