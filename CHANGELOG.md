@@ -1,3 +1,6 @@
+3.1.1 [22nd of November 2026]
+- require `lowgravitypl/raccoonwp-core` ^2.10 and `lowgravitypl/raccoonwp-mu-framework` ^2.6, which raise their own PHP floor to 8.3 to match
+
 3.1.0 [22nd of November 2026]
 Raises the PHP floor to 8.3 and the Node version to 24, because older lines no longer get security fixes. Existing projects are unaffected: Composer resolves 3.0.0 on older PHP versions.
 - raise the PHP floor to 8.3 and require `timber/timber` ^2.5.1
