@@ -1,3 +1,14 @@
+3.1.0 [22nd of November 2026]
+Raises the PHP floor to 8.3 and the Node version to 24, because older lines no longer get security fixes. Existing projects are unaffected: Composer resolves 3.0.0 on older PHP versions.
+- raise the PHP floor to 8.3 and require `timber/timber` ^2.5.1
+- set the theme `.nvmrc` to Node 24
+- replace the abandoned `boxuk/wp-muplugin-loader` with `roots/bedrock-autoloader`; the loader file is committed as `public/core/mu-plugins/bedrock-autoloader.php`
+- upgrading: delete the generated `public/core/mu-plugins/mu-require.php` left by the old loader. It fatals once `vendor/boxuk` is gone, and CI workspaces may copy it back
+- production: set `WP_DEBUG` to false, drop `WP_DEBUG_LOG` and log PHP errors to `debug.log` in the project root, outside the web root (gitignored)
+- update WP Core to 7.1, query-monitor to 4.1 and the other composer dependencies
+- update theme npm dependencies, including css-loader 7, sass-loader 17, postcss-loader 8, style-loader 4, copy-webpack-plugin 14 and sharp 0.35
+- remove an unused jQuery import from the theme script that failed `npm run lint`
+
 3.0.0 [17th of August 2026]
 Major release and the start of the 3.x branch. Backwards incompatible: drops PHP 7.4 support — RaccoonWP now requires PHP 8.0+. Timber 2.x depends on Twig 3, and the only Twig line that still runs on 8.0 (3.11.x) is what a fresh install on 8.0 resolves to.
 - adopt the Roots WordPress core package (`roots/wordpress`), update WP Core to 7.x
